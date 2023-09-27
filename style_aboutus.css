@@ -1,0 +1,98 @@
+#id_quem_somos {
+    background-color: #effafc;
+}
+
+#quem_somos_header_principal {
+    padding: 1%;
+    height: 7em;
+    margin-bottom: 2%;
+}
+
+#quem_somos_header_principal h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+#quem_somos_header_principal h4 {
+    font-size: 1.5em;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#quem_somos_header_principal h4 a:hover {
+    color: white;
+}
+
+#quem_somos_header_principal div {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+#quem_somos_header_principal span {
+    margin-top: 2%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #68cbe8;
+}
+
+.quem_somos_sub_headers h2 {
+    font-size: 2em;
+    padding: 2%;
+}
+
+/* HISTÓRIA */
+#id_historia {
+    height: 100vh;
+    background-image: url(images/livros.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+}
+
+#id_historia p {
+    font-size: 1.1em;
+    width: 50%;
+    padding: 2%;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* MISSÃO VISÃO VALORES */
+#id_mvv {
+    height: 60vh;
+}
+
+#id_div_mvv {
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.caixa_mvv {
+    background-color: #90caf9;
+    width: 15em;
+    height: 15em;
+    border-radius: 15%;
+    padding: 1.5%;
+}
+
+.caixa_mvv h3 {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20%;
+}
+
+.caixa_mvv p {
+    font-size: 1.1em;
+    color: #212121;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+
+
