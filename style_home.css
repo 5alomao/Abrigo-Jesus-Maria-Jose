@@ -1,0 +1,35 @@
+#id_pagina_inicial {
+    background-color: aliceblue;
+    height: 100vh;
+    padding: 4%;
+    background-image: url('images/equipe.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+#id_pagina_inicial header h1 {
+    font-size: 3em;
+    text-align: left;
+}
+
+#id_pagina_inicial header h4 {
+    font-size: 1.5em;
+    color: #504c4c;
+    margin-top: 1%;
+    text-align: left;
+}
+
+#id_pagina_inicial p {
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    line-height: 1.5em;
+    width: 40%;
+    margin-top: 10%;
+}
+
+#id_pagina_inicial span {
+    color: #2abeeb;
+    font-weight: bold;
+}
