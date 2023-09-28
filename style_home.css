@@ -1,11 +1,11 @@
 #id_pagina_inicial {
-    background-color: aliceblue;
+    background-color: #effafc;
     height: 100vh;
     padding: 4%;
-    background-image: url('images/equipe.png');
+    background-image: url('images/fundo_home.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: 55%;
 }
 
 #id_pagina_inicial header h1 {

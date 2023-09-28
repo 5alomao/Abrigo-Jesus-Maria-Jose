@@ -28,7 +28,7 @@ body {
 }
 
 #id_header_principal nav ul li a {
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-weight: 600;
 }
 
@@ -38,14 +38,18 @@ body {
     opacity: 1;
 }
 
-.circles {
-    display: inline;
+.headers_style h1 {
+    font-size: 3em;
+    text-align: center;
 }
 
-.circle span {
-    content: "";
-    gap: 20px;
-    height: 20px;
-    width: 20px;
-    background-color: #212121;
+.headers_style h4 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+
+.sub_headers h2 {
+    font-size: 2em;
+    padding: 4%;
 }
