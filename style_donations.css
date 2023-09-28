@@ -1,9 +1,9 @@
 #id_doacoes {
     background-color: #effafc;
-    background-image: url('images/mao_coracao.png');
+    background-image: url('images/icone_doacoes.png');
     background-repeat: no-repeat;
     background-position-x: 85%;
-    background-position-y: 15%;
+    background-position-y: 10%;
     background-size: 25%;
 }
 
@@ -20,13 +20,13 @@
     margin-top: 5%;
 }
 
-#id_doacoes div {
+#id_doacoes header .circles{
     display: flex;
     gap: 2%;
     justify-content: center;
 }
 
-#id_doacoes span {
+#id_doacoes header .circles span {
     margin-top: 2%;
     display: block;
     height: 20px;
@@ -47,17 +47,33 @@
     height: 30em;
     border-radius: 2%;
     padding: 1.5%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 90%;
 }
 
 .div_caixa_produtos h3 {
-    text-align: center;
+    text-align: center;    
     margin-bottom: 10%;
 }
 
 .div_caixa_produtos ul li {
     margin-left: 5%;
     line-height: 1.6em;
+    font-weight: bold;
     text-align: left;
+}
+
+#caixa_produtos_alimenticios{
+    background-image: url('images/icone_alimentos.png');
+}
+
+#caixa_produtos_higiene {
+    background-image: url('images/icone_higiene.png');
+}
+
+#caixa_produtos_limpeza {
+    background-image: url('images/icone_limpeza.png');
 }
 
 #id_o_que_doar h4 {
