@@ -8,13 +8,24 @@
     margin-bottom: 10%;
 }
 
-#id_doacoes p {
+#id_doacoes #div_sub_header {
+    display: flex;
+}
+
+#id_doacoes #div_sub_header p {
     padding: 4%;
     font-size: 1.5em;
     text-align: left;
     line-height: 1.5em;
     width: 50%;
 }
+
+#id_doacoes div img {
+    align-self: center;
+    margin-left: 100px;
+
+}
+
 
 #id_doacoes header .circles{
     display: flex;
