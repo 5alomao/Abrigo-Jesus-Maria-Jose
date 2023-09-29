@@ -30,23 +30,25 @@
 /* HISTÓRIA */
 #id_historia {
     height: 100vh;
-    background-image: url('images/fundo_historia.jpg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    display: flex;
+    padding: 4%;
 }
 
-#id_historia p {
+#id_historia  p {
     font-size: 1.1em;
-    width: 50%;
-    margin-left:  4%;
+    margin-left: 4%;
     text-align: left;
     line-height: 1.5em;
 }
 
+#id_historia img {
+    height: 500px;
+    align-self: center;
+}
+
 /* MISSÃO VISÃO VALORES */
 #id_mvv {
-    height: 100vh;    
+    height: 80vh;
 }
 
 #id_div_mvv {
@@ -92,42 +94,9 @@
 
 #caixa_visao {
     background-image: url('images/icone_visao.png');
-    
+
 }
 
 #caixa_valores {
     background-image: url('images/icone_valores.png');
-}
-
-#id_infos {
-    height: 100vh;
-}
-
-#id_div_infos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2%;
-    gap: 5em;
-    width: 100%;
-    text-align: left;
-}
-
-.caixa_infos {
-    background-color: #98dcec;
-    border: 2px solid #7dbacf;
-    border-radius: 2%;
-    width: 200px;
-    height: 60px;
-    display: block;
-    text-align: center;
-}
-
-.caixa_infos h4 {
-    background-color: #7dbacf;
-    
-}
-
-.caixa_infos p {
-    margin-top: 10%;
 }

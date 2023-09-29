@@ -1,14 +1,11 @@
 #id_doacoes {
     background-color: #effafc;
-    background-image: url('images/icone_doacoes.png');
-    background-repeat: no-repeat;
-    background-position-x: 85%;
-    background-position-y: 10%;
-    background-size: 25%;
 }
 
-#id_doacoes_header h1 {
-    text-align: center;
+#id_doacoes_header {
+    padding: 1%;
+    height: 7em;
+    margin-bottom: 10%;
 }
 
 #id_doacoes p {
@@ -17,7 +14,6 @@
     text-align: left;
     line-height: 1.5em;
     width: 50%;
-    margin-top: 5%;
 }
 
 #id_doacoes header .circles{
@@ -84,6 +80,7 @@
 }
 #id_o_que_doar address {
     text-align: center;
+    margin-bottom: 30px;
 }
 #id_o_que_doar address a {
     font-size: 1.2em;
