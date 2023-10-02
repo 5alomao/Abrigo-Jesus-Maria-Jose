@@ -1,0 +1,18 @@
+#caixa_contatos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 45vh;
+}
+
+.div_caixa_contatos {
+    width: 15vw;
+    height: 15vh;
+    padding: 1%;
+    border: 1px solid #212121;
+    text-align: center;
+}
+
+.div_caixa_contatos a {
+    color: rgb(47, 36, 197)
+}
