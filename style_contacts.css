@@ -1,18 +1,41 @@
-#caixa_contatos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 45vh;
+#lista_contatos {
+    padding: 5%;
 }
 
-.div_caixa_contatos {
-    width: 15vw;
-    height: 15vh;
-    padding: 1%;
-    border: 1px solid #212121;
+#lista_contatos ul {
     text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
 }
 
-.div_caixa_contatos a {
-    color: rgb(47, 36, 197)
+.item_lista_contatos {
+    background-color: #98dcec;
+    border: 1px solid #7dbacf;
+    border-radius: 2%;
+    height: 160px;
+    width: 260px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.item_lista_contatos a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.item_lista_contatos i{
+    color: #158fb4;
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.item_lista_contatos p {
+    margin-top: 10px;
+    font-weight: bold;
 }
