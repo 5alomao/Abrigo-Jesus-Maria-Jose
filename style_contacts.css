@@ -1,3 +1,7 @@
+#id_contatos {
+    height: 100vh;
+}
+
 #lista_contatos {
     padding: 5%;
 }
@@ -23,13 +27,13 @@
     font-size: 16px;
 }
 
-.item_lista_contatos a{
+.item_lista_contatos a {
     display: block;
     margin-bottom: 20px;
     font-size: 20px;
 }
 
-.item_lista_contatos i{
+.item_lista_contatos i {
     color: #158fb4;
     font-size: 64px;
     margin-bottom: 10px;

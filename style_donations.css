@@ -8,28 +8,31 @@
     margin-bottom: 10%;
 }
 
-#id_doacoes #div_sub_header {
+#div_sub_header {
     display: flex;
+    margin-left: 4%;
 }
 
-#id_doacoes #div_sub_header p {
-    padding: 4%;
-    font-size: 1.5em;
-    text-align: left;
-    line-height: 1.5em;
+#div_sub_header div {
     width: 50%;
 }
 
-#id_doacoes div img {
-    align-self: center;
-    margin-left: 100px;
-
+#div_sub_header p {
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+    width: 100%;
 }
 
+#div_sub_header img {
+    
+    margin: auto;
+}
 
 #id_caixa_produtos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-top: 4%;
 }
 
 .div_caixa_produtos {
@@ -86,7 +89,7 @@
 
 }
 
-#id_o_que_doar address a {
+#id_o_que_doar address p {
     font-size: 1.2em;
     display: block;
     margin-bottom: 50px;
@@ -96,4 +99,5 @@
 #id_o_que_doar address iframe {
     width: 80%;
     height: 200px;
+    margin-bottom: 10%;
 }

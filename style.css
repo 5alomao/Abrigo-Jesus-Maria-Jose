@@ -17,8 +17,7 @@ body {
     height: 5em;
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%
+    width: 100%;
 }
 
 #id_header_principal nav {
@@ -60,7 +59,6 @@ body {
 
 .headers_style h1 {
     font-size: 3em;
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -72,7 +70,7 @@ body {
 
 .sub_headers h2 {
     font-size: 2em;
-    padding: 4%;
+    padding-left: 4%;
 }
 
 .circles {
