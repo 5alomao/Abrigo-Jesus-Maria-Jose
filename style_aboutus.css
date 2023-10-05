@@ -13,15 +13,15 @@
 }
 
 /* HISTÓRIA */
-#id_historia {
+.historia {
     margin-bottom: 10%;
 }
 
-#id_historia div {
+.historia div {
     display: flex;
 }
 
-#id_historia div p {
+.historia div p {
     font-size: 1.1em;
     text-align: justify;
     width: 50%;
@@ -29,7 +29,7 @@
     padding: 4% 4% 0px 4%;
 }
 
-#id_historia img {
+.historia img {
     height: 500px;
     margin: auto;
 }

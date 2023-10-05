@@ -18,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    
 }
 
 #id_header_principal nav {
@@ -87,3 +88,4 @@ body {
     border-radius: 50%;
     background-color: #68cbe8;
 }
+
