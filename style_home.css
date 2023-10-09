@@ -1,25 +1,27 @@
 #id_pagina_inicial {
     display: flex;
-    background-color: #effafc;
-    margin-left: 4%;
+    padding-left: 4%;
     height: 100vh;
+}
+
+#id_pagina_inicial div {
+    width: 100%;
+}
+
+#id_pagina_inicial div header {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #id_pagina_inicial div header h1 {
     font-size: 3em;
     text-align: left;
-    padding-top: 10%;
 }
 
 #id_pagina_inicial div header h4 {
     font-size: 1.3em;
-    color: #504c4c;
     margin-top: 1%;
     text-align: left;
-}
-
-#id_pagina_inicial div {
-    width: 100%;
 }
 
 #id_pagina_inicial div p {
@@ -27,11 +29,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
     line-height: 1.5em;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #id_pagina_inicial div span {
-    color: #2abeeb;
+    color: #98dcec;
     font-weight: bold;
 }
 
@@ -50,4 +52,5 @@
 #id_pagina_inicial img {
     width: 100%;
     margin: auto;
+    height: auto;
 }
