@@ -1,13 +1,3 @@
-#id_doacoes {
-    background-color: #effafc;
-}
-
-#id_doacoes_header {
-    padding: 1%;
-    height: 7em;
-    margin-bottom: 10%;
-}
-
 #div_sub_header {
     display: flex;
     margin-left: 4%;
@@ -25,14 +15,15 @@
 }
 
 #div_sub_header img {
-    
     margin: auto;
 }
+
+/* PRODUTOS */
 
 #id_caixa_produtos {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 4%;
+    padding: 4% 0;
 }
 
 .div_caixa_produtos {
@@ -79,25 +70,88 @@
 #id_o_que_doar h4 {
     font-size: 1.5em;
     text-align: center;
-    margin-top: 4%;
-    margin-bottom: 1%;
 }
 
 #id_o_que_doar address {
     text-align: center;
-    margin-bottom: 30px;
-
 }
 
 #id_o_que_doar address p {
+    padding: 1% 0;
     font-size: 1.2em;
     display: block;
-    margin-bottom: 50px;
     font-weight: bold;
 }
 
 #id_o_que_doar address iframe {
     width: 80%;
-    height: 200px;
-    margin-bottom: 10%;
+    height: 250px;
+    padding-bottom: 4%;
+}
+
+/* DINHEIRO */
+
+#caixa_formas_doar {
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.div_formas_doar {
+    width: 50%;
+    height: 15em;
+    display: block;
+    text-align: center;
+    margin: 1%;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid #7dbacf;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 85%;
+    background-size: 25%;
+}
+
+.div_formas_doar h3 {
+    padding: 2% 0;
+    font-size: 1.5em;
+}
+
+.div_formas_doar ul {
+    list-style: none;
+    width: 50%;
+}
+
+.div_formas_doar ul li {
+    padding: 5%;
+    margin-top: 6%;
+    text-align: left;
+    font-weight: bold;
+    color: #0004fd;
+}
+
+.div_formas_doar li p {
+    font-weight: bold;
+}
+
+.div_formas_doar img {
+    width: 100%;
+    margin: auto;
+}
+
+#div_banco_do_brasil {
+    background-image: url('images/imagem_qrcode_pix.jpeg');
+}
+
+#div_banco_do_brasil h3 {
+    color: #0004fd;
+    background-color: yellow;
+}
+
+#div_caixa_economica_federal {
+    background-image: url('images/imagem_qrcode_pix.jpeg');
+}
+
+#div_caixa_economica_federal h3 {
+    color: #0004fd;
+    background-color: rgb(255, 175, 28);
 }
