@@ -1,8 +1,9 @@
 #id_footer {
     display: block;
+    background-color: rgb(243, 240, 240);
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #a19595;
+    border-top: 1px solid #d1cccc;
 }
 
 #conteudo_footer {
@@ -35,6 +36,7 @@
 }
 
 #copyright {
+    
     padding-bottom: 20px;
     padding-right: 20px;
 }
