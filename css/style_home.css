@@ -17,9 +17,13 @@
 }
 
 .home-text .text-h4 {
+    text-align: left;
     font-size: 1.5rem;
-    color: var(--dark);
     margin-bottom: 4rem;
+}
+
+.text-h4 span {
+    color: var(--red);
 }
 
 .home-text p {
