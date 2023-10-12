@@ -1,0 +1,52 @@
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    text-align: center;
+}
+
+.contact-box {
+    background: var(--blue);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2%;
+    transition: all 0.5s;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+.contact-box:hover {
+    background: var(--green);
+}
+
+.contact-box a {
+    color: var(--dark);
+}
+
+.contact-box a h3 {
+    margin: 5%;
+}
+
+.contact-box a i {
+    margin: 3%;
+    padding: 3%;
+    font-size: 64px;
+    color: var(--white);
+}
+
+.contact-box a p {
+    margin: 5%;
+    font-weight: 600;
+}
+
+@media (max-width:785px) {
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .contact-box {
+        margin: 20px;
+    }
+}

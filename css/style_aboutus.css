@@ -1,0 +1,125 @@
+.history-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8%;
+}
+
+.history-text {
+    width: 50%;
+    text-align: justify;
+}
+
+.history-text ul {
+    margin: 20px 40px;
+}
+
+.history-text ul li {
+    margin: 5px;
+}
+
+.history-text p {
+    margin-bottom: 1rem;
+}
+
+.history-text #more-btn-history-div {
+    display: flex;
+    justify-content: right;
+}
+
+.history-img {
+    width: 40%;
+}
+
+.history-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+/* MISSÃO VISÃO VALORES */
+.mvv-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4%;
+}
+
+.mvv-box {
+    display: block;
+    background: var(--blue);
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2%;
+    padding: 1.5%;
+    color: var(--dark);
+    text-align: left;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.5s;
+}
+
+.mvv-box:hover {
+    cursor: pointer;
+    background: var(--green);
+}
+
+.mvv-box .mvv-box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.mvv-box h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mvv-box p,
+.mvv-box ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.mvv-box .mvv-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 785px) {
+
+    .aboutus {
+        padding: 0 2%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* História */
+    .history-content {
+        display: block;
+    }
+
+    .history-text {
+        width: 100%;
+    }
+
+    .history-text #more-btn-history-div {
+        margin: 50px;
+        justify-content: center;
+    }
+
+    .history-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* MISSÃO VISÃO VALORES */
+    .mvv-content {
+        flex-direction: column;
+    }
+
+    .mvv-box {
+        margin: 20px;
+    }
+}
