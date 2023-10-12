@@ -1,58 +1,52 @@
-#id_contatos {
-    height: 100vh;
-}
-
-#lista_contatos {
-    padding: 5%;
-    background-color: #98dcec;
-}
-
-#lista_contatos ul {
-    text-align: center;
+.contact-content {
     display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    height: 0px;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    text-align: center;
 }
 
-.item_lista_contatos {
-    background-color: #ffffff;
-    border: 1px solid #7dbacf;
+.contact-box {
+    background: var(--blue);
+    width: 10rem;
+    height: 10rem;
     border-radius: 2%;
-    height: 180px;
-    width: 200px;
-    margin: 10px 10px 10px 0;
-    font-size: 16px;
+    transition: all 0.5s;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
 }
 
-.item_lista_contatos {
-    background-color: #ffffff;
-    border: 1px solid #7dbacf;
-    border-radius: 2%;
-    height: 180px;
-    width: 200px;
-    margin: 10px 10px 10px 0;
-    font-size: 16px;
+.contact-box:hover {
+    background: var(--green);
 }
 
-.item_lista_contatos a h3 {
-    padding-top: 5%;
-
+.contact-box a {
+    color: var(--dark);
 }
 
-.item_lista_contatos i {
-    color: #98dcec;
-    font-size: 72px;
-    margin: 10% 0;
+.contact-box a h3 {
+    margin: 5%;
 }
 
-.item_lista_contatos p {
-    color: #212121;
+.contact-box a i {
+    margin: 3%;
+    padding: 3%;
+    font-size: 64px;
+    color: var(--white);
 }
 
-.item_lista_contatos a h3:hover,
-.item_lista_contatos i:hover,
-.item_lista_contatos p:hover {
-    color: #39cef0;
+.contact-box a p {
+    margin: 5%;
+    font-weight: 600;
+}
+
+@media (max-width:785px) {
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .contact-box {
+        margin: 20px;
+    }
 }
