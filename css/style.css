@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --dark: #212121;
+    --white: #fff;
+    --blue: #98dcec;
+    --darkblue: #7dbacf;
+    --red: #da1010;
+}
+
+body {
+    max-width: max-content;
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+a {
+    color: var(--dark);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background-color: var(--blue);
+    width: 100%;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo {
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navigation ul li a:hover {
+    color: var(--white);
+    transition: all .5s;
+}
+
+.navigation ul li a::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
+}
+
+.navigation ul li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid var(--white);
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark);
+    margin: 5px auto;
+    transition: all .3s;
+}
+
+.section-title {
+    margin: 30px;
+}
+
+.section-title h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section-title h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1% 0;
+
+}
+
+.section-topic-h2 {
+    font-size: 2em;
+    margin: 50px 8%;
+}
+
+.circles {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+.circles span {
+    margin: 2% 0;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--blue);
+}
+
+.more-btn {
+    padding: 15px 45px;
+    background: var(--blue);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.more-btn:hover {
+    background: var(--darkblue);
+}
+
+@media (max-width:785px) {
+    .navigation ul li a:hover {
+        color: var(--blue);
+    }
+
+    .navigation ul li a:hover::after {
+        border-bottom-color: var(--blue);
+    }
+}
