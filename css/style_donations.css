@@ -25,12 +25,17 @@
 
 .product-box {
     background: var(--blue);
-    border: 1px solid var(--darkblue);
+    box-shadow: 0 0.1rem 0.5rem #ccc;
     width: 15rem;
     height: 30.5rem;
     border-radius: 2%;
     padding: 1.5%;
     margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.product-box:hover {
+    background: var(--green);
 }
 
 .product-box h3 {
@@ -48,6 +53,7 @@
     justify-content: right;
     align-items: center;
 }
+
 
 .text-h4 {
     font-size: 1.5em;
@@ -74,7 +80,6 @@
 /* PAGAMENTO */
 
 .paymant-content {
-    padding: 0 8%;
     display: flex;
     justify-content: space-between;
 }
@@ -86,6 +91,7 @@
     margin: 1%;
     border: 1px solid var(--darkblue);
     justify-content: space-between;
+    margin: 0 8%;
 }
 
 .paymant-text {
@@ -95,12 +101,12 @@
 .paymant-text h3 {
     color: var(--dark);
     padding: 2% 0 0 2%;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: left;
 }
 
 .paymant-text ul {
     list-style: none;
-    width: 50%;
 }
 
 .paymant-text ul li {
@@ -118,8 +124,9 @@
 
 .paymant-img {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    border-left: 1px solid var(--darkblue);
     width: 40%;
 }
 
@@ -164,5 +171,33 @@
         margin-bottom: 20px;
     }
 
+    .paymant-box {
+        display: block;
+        height: auto;
+    }
+
+    .paymant-text {
+        width: 100%;
+    }
+
+    .paymant-text h3 {
+        text-align: center;
+    }
+
+    .paymant-text ul li {
+        padding: 0 15px;
+    }
+
+    .paymant-img {
+        width: 100%;
+        margin: 20px 0;
+        border-left: none;
+        border-top: 1px solid var(--darkblue);
+    }
+
+    .paymant-img img {
+        width: 55%;
+        padding-top: 20px;
+    }
 
 }
