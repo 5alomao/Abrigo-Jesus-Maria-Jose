@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=VT323&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +11,10 @@
 :root {
     --dark: #212121;
     --white: #fff;
-    --blue: #98dcec;
+    --blue: #6293f3;
     --darkblue: #7dbacf;
-    --red: #da1010;
+    --red: #f7434c;
+    --green: #b6ea7b;
 }
 
 body {
@@ -108,7 +111,6 @@ a {
     text-align: center;
     font-size: 1.5rem;
     margin: 1% 0;
-
 }
 
 .section-topic-h2 {
@@ -140,7 +142,7 @@ a {
 }
 
 .more-btn:hover {
-    background: var(--darkblue);
+    background: var(--green);
 }
 
 @media (max-width:785px) {
