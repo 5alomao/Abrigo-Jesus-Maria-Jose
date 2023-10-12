@@ -34,7 +34,7 @@
 .history-img img {
     width: 100%;
     border-radius: 20px;
-    border: 2px solid var(--blue);
+    box-shadow: 0 0.1rem 0.5rem #ccc;
 }
 
 /* MISSÃO VISÃO VALORES */
@@ -48,13 +48,19 @@
 .mvv-box {
     display: block;
     background: var(--blue);
-    border: 2px solid var(--darkblue);
     width: 20rem;
     height: 15rem;
-    border-radius: 5px;
+    border-radius: 2%;
     padding: 1.5%;
     color: var(--dark);
     text-align: left;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.5s;
+}
+
+.mvv-box:hover {
+    cursor: pointer;
+    background: var(--green);
 }
 
 .mvv-box .mvv-box-title {
