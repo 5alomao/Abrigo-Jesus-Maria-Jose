@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-@media (max-width: 785px) {
+@media (min-width: 720px) {
 
     /* NAV BAR */
     .navigation {
