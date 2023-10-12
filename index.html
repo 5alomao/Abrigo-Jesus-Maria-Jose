@@ -5,59 +5,60 @@
     <meta charset="UTF-8">
     <title>Abrigo Jesus Maria José</title>
     <link rel="icon" type="image/png" href="images/logo_abrigo.png" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style_home.css">
-    <link rel="stylesheet" type="text/css" href="style_aboutus.css">
-    <link rel="stylesheet" type="text/css" href="style_donations.css">
-    <link rel="stylesheet" type="text/css" href="style_footer.css">
-    <link rel="stylesheet" type="text/css" href="style_contacts.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_home.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_aboutus.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_donations.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header id="id_header_principal">
-        <nav>
-            <ul>
-                <li><a href="#id_pagina_inicial">Página Inicial</a></li>
-                <li><a href="#id_quem_somos">Quem Somos</a></li>
-                <li><a href="#id_doacoes">Doações</a></li>
-                <li><a href="#id_contatos">Contatos</a></li>
-                <li><a href="#id_doadores">Doadores</a></li>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">A J M J <span><i class="fa-solid fa-heart"></i></span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Página Inicial</a></li>
+                <li class="nav-item"><a href="#aboutus">Quem Somos</a></li>
+                <li class="nav-item"><a href="#donations">Doações</a></li>
+                <li class="nav-item"><a href="#contacts">Contatos</a></li>
+                <li class="nav-item"><a href="#donators">Doadores</a></li>
             </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Página Inicial -->
-        <section id="id_pagina_inicial">
-            <div>
-                <header>
-                    <h1>Abrigo Jesus Maria José</h1>
-                    <h4>Um coração aberto a solidariedade!</h4>
-                </header>
+        <section id="home" class="home">
+            <div class="home-text">
+                <h1 class="text-h1">Abrigo Jesus Maria José</h1>
+                <h4 class="text-h4">Um coração aberto a solidariedade!</h4>
                 <p>
-                    O <span>Abrigo Jesus Maria José</span> depende da generosidade de pessoas como você para
-                    continuar a realizar nossa missão.
+                    Dependemos da generosidade de pessoas como você para continuar a realizar nossa missão. Sua doação
+                    faz a diferença e pode mudar a vida de uma criança e/ou adolescente.
                 </p>
-                <p>
-                    Sua doação faz a diferença e pode mudar a vida de um criança.
-                </p>
-                <p>
+                <a href="donations" class="more-btn">Saiba Mais</a>
+                <!-- <p>
                     Horários de Funcionamento - 24 horas
-                </p>
-                <span>Segunda | Terça | Quarta | Quinta | Sexta | Sábado | Domingo</span>
-
+                </p> -->
+                <!-- <span id="dias_semana">Segunda | Terça | Quarta | Quinta | Sexta | Sábado | Domingo</span> -->
             </div>
-            <div>
+            <div class="home-img">
                 <img src="images/logo_abrigo.png" alt="Imagem da logo do Abrigo Jesus Maria Jose.">
             </div>
         </section>
 
         <!-- Quem Somos -->
-        <section id="id_quem_somos">
-            <header class="headers_style">
+        <section id="aboutus" class="aboutus">
+            <header class="section-title">
                 <h1>Sobre Nós</h1>
                 <h4>Fundadores | Missão, Visão e Valores | História</h4>
                 <div class="circles">
@@ -67,13 +68,11 @@
                 </div>
             </header>
 
-            <!-- Fundadores -->
-            <section class="quem_somos_section">
-                <header class="sub_headers">
-                    <h2>Nossa História . . .</h2>
-                </header>
-                <div class="div_conteudo_historia">
-                    <div class="div_texto_historia">
+            <!-- História -->
+            <section>
+                <h2 class="section-topic-h2">Nossa História . . .</h2>
+                <div class="history-content">
+                    <div class="history-text">
                         <p>O Abrigo Jesus Maria José foi inaugurado em 19 de Março de 1948 por:</p>
                         <ul>
                             <li><em>Lindolfo de Souza Dias</em></li>
@@ -91,68 +90,71 @@
                             seus serviços a cidade de Machado, acolhendo, atendendo e educando crianças e
                             adolescentes.
                         </p>
-                        <br>
-                        <p>No decorrer de todos esses anos viemos dando assistência em todas as áreas, tanto
+
+                        <p>
+                            No decorrer de todos esses anos viemos dando assistência em todas as áreas, tanto
                             materiais, como espirituais a muitas crianças e jovens que por aqui passaram e hoje são
                             verdadeiros profissionais, e eximeos responsáveis dedicados aos seus lares e familiares.
                         </p>
-                        <br>
+
                         <p>
                             Quando diante da necessidade de se atender ao grande número de acolhidos, desprovidos de
                             lares e famílias ajustadas, pessoas de bem começaram a se preocupar com tais crianças,
                             levando avante a idéia de se fundar, essa instituição em 1948.
                         </p>
-                        <br>
-                        <p>Ao lado temos a imagem da primeira fachada do Abrigo Jesus Maria José</p>
-                        <a href="quem_somos.html">
-                            <div id="saiba_mais">
-                                <p>Saiba Mais</p>
-                            </div>
-                        </a>
+                        <div id="more-btn-history-div">
+                            <a href="#" id="more-btn-history" class="more-btn">Saiba Mais</a>
+                        </div>
                     </div>
-                    <div class="div_imagem_historia">
+                    <div class="history-img">
                         <img title="Imagem da primeira fachada do Abrigo Jesus Maria José."
                             src="images/imagem_fachada_abrigo.jpeg"
                             alt="Imagem da primeira fachada do Abrigo Jesus Maria José.">
                     </div>
                 </div>
-            
             </section>
+
             <!-- Missão Visão e Valores -->
-            <section id="id_mvv">
-                <header class="sub_headers">
-                    <h2>Missão, Visão e Valores . . .</h2>
-                </header>
-                <div id="id_div_mvv">
-                    <div id="caixa_missao" class="caixa_mvv" class="imagem_caixas_mvv">
-                        <h3>Missão</h3>
+            <section>
+                <h2 class="section-topic-h2">Missão, Visão e Valores . . .</h2>
+                <div class="mvv-content">
+                    <div class="mvv-box">
+                        <div class="mvv-box-title">
+                            <h3>Missão</h3>
+                            <div class="mvv-img-div">
+                                <img src="images/icone_missao.png" alt="">
+                            </div>
+                        </div>
                         <p>Garantir a proteção integral de crianças e/ou adolescentes com medida protetiva de
                             acolhimento institucional.</p>
                     </div>
-                    <div id="caixa_visao" class="caixa_mvv" class="imagem_caixas_mvv">
-                        <h3>Visão</h3>
+                    <div class="mvv-box">
+                        <div class="mvv-box-title">
+                            <h3>Visão</h3>
+                            <div class="mvv-img-div">
+                                <img src="images/icone_visao.png" alt="">
+                            </div>
+                        </div>
                         <p>Reinserir a criança e/ou adolescente em sua família de origem e/ou extensa e quando
                             isso não for possível, em família substituta.</p>
                     </div>
-                    <div id="caixa_valores" class="caixa_mvv" class="imagem_caixas_mvv">
-                        <h3>Valores</h3>
-                        <ul>
-                            <li>Amor</li>
-                            <li>Garantir os Direitos</li>
-                            <li>Responsabilidade Social</li>
-                            <li>Participação de Todos</li>
-                            <li>Comprometimento</li>
-                            <li>Família</li>
-                            <li>Respeito</li>
-                        </ul>
+                    <div class="mvv-box">
+                        <div class="mvv-box-title">
+                            <h3>Valores</h3>
+                            <div class="mvv-img-div">
+                                <img src="images/icone_valores.png" alt="">
+                            </div>
+                        </div>
+                        <p>Amor, Garantia de Direitos,
+                            Responsabilidade Social, Participação de Todos, Comprometimento, Família e Respeito.</p>
                     </div>
                 </div>
             </section>
         </section>
 
         <!-- Doações -->
-        <section id="id_doacoes">
-            <header id="id_doacoes_header" class="headers_style">
+        <section id="donations">
+            <header class="section-title">
                 <h1>Doações</h1>
                 <h4>Colabore com o Abrigo Jesus Maria e José</h4>
                 <div class="circles">
@@ -161,25 +163,24 @@
                     <span></span>
                 </div>
             </header>
-            <div id="div_sub_header">
-                <div>
-                    <p>
-                        A Instituição conta com a ajuda da sociedade para acolhimento
-                        e manutençao de crianças e adolescentes
-                        resgatadas de situação de vulnerabilidade social. Essa obra não pode parar! Seja um
-                        benfeitor!
-                    </p>
-                </div>
+
+            <div class="donation-text">
+                <p>
+                    A Instituição conta com a ajuda da sociedade para acolhimento
+                    e manutençao de crianças e adolescentes
+                    resgatadas de situação de vulnerabilidade social.
+
+                    <br><br>Essa obra não pode parar!
+                    <br><br>Seja um benfeitor!
+                </p>
                 <img src="images/icone_doacoes.png" alt="">
             </div>
 
             <!-- O que Doar -->
-            <section id="id_o_que_doar">
-                <header class="sub_headers">
-                    <h2>Nos Ajude Doando Produtos . . .</h2>
-                </header>
-                <div id="id_caixa_produtos">
-                    <div id="caixa_produtos_alimenticios" class="div_caixa_produtos">
+            <section>
+                <h2 class="section-topic-h2">Nos Ajude Doando Produtos . . .</h2>
+                <div class="product-donation-content">
+                    <div class="product-box">
                         <h3>Produtos Alimentícios</h3>
                         <ul>
                             <li>Produto Aqui</li>
@@ -194,10 +195,12 @@
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
-
                         </ul>
+                        <div>
+                            <img src="images/icone_alimentos.png" alt="">
+                        </div>
                     </div>
-                    <div id="caixa_produtos_higiene" class="div_caixa_produtos">
+                    <div class="product-box">
                         <h3>Produtos de Higiene</h3>
                         <ul>
                             <li>Produto Aqui</li>
@@ -212,10 +215,12 @@
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
-
                         </ul>
+                        <div>
+                            <img src="images/icone_higiene.png" alt="">
+                        </div>
                     </div>
-                    <div id="caixa_produtos_limpeza" class="div_caixa_produtos">
+                    <div class="product-box">
                         <h3>Produtos de Limpeza</h3>
                         <ul>
                             <li>Produto Aqui</li>
@@ -230,10 +235,12 @@
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
                             <li>Produto Aqui</li>
-
                         </ul>
+                        <div>
+                            <img src="images/icone_limpeza.png" alt="">
+                        </div>
                     </div>
-                    <div id="caixa_brinquedos" class="div_caixa_produtos">
+                    <div class="product-box">
                         <h3>Brinquedos</h3>
                         <ul>
                             <li>Brinquedo Aqui</li>
@@ -248,12 +255,14 @@
                             <li>Brinquedo Aqui</li>
                             <li>Brinquedo Aqui</li>
                             <li>Brinquedo Aqui</li>
-
                         </ul>
+                        <div>
+                            <img src="images/icone_brinquedos.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <h4>Sua ajuda poderá ser entregue no Abrigo Jesus Maria José</h4>
-                <address id="id_localidade">
+                <h4 class="text-h4">Sua ajuda poderá ser entregue no Abrigo Jesus Maria José</h4>
+                <address class="location">
                     <p>Rua Professor José Cândido, 284, Centro, Machado - MG</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.9197548879682!2d-45.92328607178934!3d-21.676340227670508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca136a319ab859%3A0xaf66b703ed7ea864!2sAbrigo%20Jesus%20Maria%20Jos%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1695985985414!5m2!1spt-BR!2sbr"
@@ -262,39 +271,47 @@
                     </iframe>
                 </address>
             </section>
+
             <!-- Por onde Doar -->
-            <section id="id_formas_doar">
-                <header class="sub_headers">
-                    <h2>Nos Ajude Doando Dinheiro . . .</h2>
-                </header>
-                <div id="caixa_formas_doar">
-                    <div id="div_banco_do_brasil" class="div_formas_doar">
-
-                        <h3>Banco do Brasil</h3>
-                        <ul>
-                            <li>Agência <p>0399-9</p>
-                            </li>
-                            <li>Chave Pix (CNPJ) <p>19.369.784/0001-58</p>
-                            </li>
-                        </ul>
-
+            <section>
+                <h2 class="section-topic-h2">Nos Ajude Doando Dinheiro . . .</h2>
+                <div class="paymant-content">
+                    <div class="paymant-box">
+                        <div class="paymant-text">
+                            <h3>Banco do Brasil</h3>
+                            <ul>
+                                <li>Agência <p>0399-9</p>
+                                </li>
+                                <li>Chave Pix (CNPJ) <p>19.369.784/0001-58</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="paymant-img">
+                            <img src="images/imagem_qrcode_pix.jpeg" alt="">
+                        </div>
                     </div>
-                    <div id="div_caixa_economica_federal" class="div_formas_doar">
-                        <h3>Caixa Econômica Federal</h3>
-                        <ul>
-                            <li>Agência <p>0691</p>
-                            </li>
-                            <li>Chave Pix (E-mail) <p>admabrigojmj@gmail.com</p>
-                            </li>
-                        </ul>
-
+                    <div class="paymant-box">
+                        <div class="paymant-text">
+                            <h3>Caixa Econômica Federal</h3>
+                            <ul>
+                                <li>Agência <p>0691</p>
+                                </li>
+                                <li>Chave Pix (E-mail) <p>admabrigojmj@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="paymant-img">
+                            <img src="images/imagem_qrcode_pix.jpeg" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
+
         </section>
+
         <!-- Contatos -->
-        <section id="id_contatos">
-            <header id="#id_contatos_header" class="headers_style">
+        <!-- <section id="contacts">
+            <header id="#id_contatos_header" class="section-title">
                 <h1>Contatos</h1>
                 <h4>Algumas Formas De Nos Contatar</h4>
                 <div class="circles">
@@ -349,9 +366,10 @@
                     </ul>
                 </address>
             </div>
-        </section>
+        </section> -->
+
         <!-- DOADORES - COLABORADORES - APOIADORES -->
-        <!-- <section id="id_doadores">
+        <!-- <section id="donators">
                 <header>
                     <h1>Nossos Colaboradores</h1>
                 </header>
@@ -392,11 +410,11 @@
                 <h3>Navegação</h3>
                 <nav>
                     <ul>
-                        <li><a href="#id_pagina_inicial">Página Inicial</a></li>
-                        <li><a href="#id_quem_somos">Quem Somos</a></li>
-                        <li><a href="#id_doacoes">Doações</a></li>
-                        <li><a href="#id_contatos">Contatos</a></li>
-                        <li><a href="#id_doadores">Doadores</a></li>
+                        <li><a href="#home">Página Inicial</a></li>
+                        <li><a href="#aboutus">Quem Somos</a></li>
+                        <li><a href="#donations">Doações</a></li>
+                        <li><a href="#contacts">Contatos</a></li>
+                        <li><a href="#donators">Doadores</a></li>
                     </ul>
                 </nav>
             </div>
@@ -407,15 +425,6 @@
             <div id="referencias" class="largura_topico_footer">
                 <h3>Imagens / Icones</h3>
                 <ul>
-                    <li>
-                        <a
-                            href="https://br.freepik.com/vetores-gratis/pilha-de-design-plano-desenhado-a-mao-de-ilustracao-de-livros_24307396.htm#query=livros&position=26&from_view=search&track=sph">Imagem
-                            de Freepik</a>
-                    </li>
-                    <li><a href="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-equipe-criativa_10769819.htm#query=equipe&position=4&from_view=search&track=sph"
-                            target="_blank">Imagem
-                            de storyset no Freepik</a>
-                    </li>
                     <li>
                         <a href="https://www.flaticon.com/free-icons/hand" title="hand icons" target="_blank">Hand icons
                             created by
@@ -433,6 +442,7 @@
             <h4>Desde 1948 atuando em Machado - MG.</h4>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
