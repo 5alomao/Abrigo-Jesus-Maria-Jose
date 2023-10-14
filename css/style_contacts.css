@@ -52,7 +52,7 @@
     }
 }
 
-@media only screen and (max-width:785px) {
+@media only screen and (max-width:500) {
 
     .contact-content {
         grid-template-columns: 1fr 1fr;
