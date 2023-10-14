@@ -52,6 +52,7 @@
 
     .home .text-h4 {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .home-text p {
@@ -63,7 +64,7 @@
     }
 }
 
-@media only screen and (max-width:500px) {
+@media (max-width:500px) {
 
     .home .text-h1 {
         font-size: 3rem;
