@@ -6,7 +6,7 @@
 }
 
 .contact-box {
-    background: var(--blue);
+    background: var(--green);
     width: 10rem;
     height: 10rem;
     border-radius: 2%;
@@ -15,7 +15,7 @@
 }
 
 .contact-box:hover {
-    background: var(--green);
+    background: var(--blue);
 }
 
 .contact-box a {
@@ -24,6 +24,7 @@
 
 .contact-box a h3 {
     margin: 5%;
+    font-family: 'Montserrat';
 }
 
 .contact-box a i {
@@ -35,10 +36,10 @@
 
 .contact-box a p {
     margin: 5%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-@media (max-width:785px) {
+@media only screen and (max-width:785px) {
 
     .contact-content {
         display: grid;
@@ -49,4 +50,12 @@
     .contact-box {
         margin: 20px;
     }
+}
+
+@media only screen and (max-width:785px) {
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
