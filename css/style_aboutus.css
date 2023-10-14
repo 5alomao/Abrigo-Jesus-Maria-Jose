@@ -16,10 +16,13 @@
 
 .history-text ul li {
     margin: 5px;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .history-text p {
     margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .history-text #more-btn-history-div {
@@ -29,6 +32,7 @@
 
 .history-img {
     width: 40%;
+    margin: auto 0;
 }
 
 .history-img img {
@@ -47,7 +51,7 @@
 
 .mvv-box {
     display: block;
-    background: var(--blue);
+    background: var(--green);
     width: 20rem;
     height: 15rem;
     border-radius: 2%;
@@ -60,7 +64,7 @@
 
 .mvv-box:hover {
     cursor: pointer;
-    background: var(--green);
+    background: var(--darkblue);
 }
 
 .mvv-box .mvv-box-title {
@@ -73,11 +77,11 @@
 .mvv-box h3 {
     font-size: 2rem;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
-.mvv-box p,
-.mvv-box ul li {
-    font-size: 1rem;
+.mvv-box p {
+    font-size: 1.1rem;
     margin: 10px 0;
 }
 
@@ -121,5 +125,27 @@
 
     .mvv-box {
         margin: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    
+    .mvv-box {
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .mvv-box .mvv-box-title {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .mvv-box h3 {
+        font-size: 1.3rem;
+    }
+    
+    .mvv-box p {
+        font-size: 1rem;
+        text-align: center;
     }
 }
