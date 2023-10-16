@@ -91,6 +91,17 @@
     justify-content: center;
 }
 
+@media (max-width: 1080px) {
+
+    .mvv-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+        margin: 4%;
+    }
+}
+
 @media (max-width: 785px) {
 
     .aboutus {
@@ -129,7 +140,7 @@
 }
 
 @media (max-width:500px) {
-    
+
     .mvv-box {
         width: 18rem;
         height: 15rem;
@@ -143,9 +154,34 @@
     .mvv-box h3 {
         font-size: 1.3rem;
     }
-    
+
     .mvv-box p {
         font-size: 1rem;
         text-align: center;
+    }
+}
+
+@media (max-width:425px) {
+
+    .history-text ul {
+        width: max-content;
+        margin: 20px 0;
+        list-style: none;
+    }
+
+    .history-text ul li {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .history-img {
+        display: none;
+    }
+
+    .history-text #more-btn-history-div {
+        margin: 20px;
+        justify-content: center;
     }
 }
