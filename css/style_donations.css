@@ -113,7 +113,7 @@
 
 .paymant-text ul li {
     padding: 5%;
-    margin-top: 6%;
+    margin-top: 20px;
     text-align: left;
     font-weight: bold;
 }
@@ -135,6 +135,36 @@
     width: 75%;
 }
 
+@media (max-width:1200px) {
+
+    .product-donation-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .product-box ul li {
+        margin-left: 10%;
+    }
+
+    .paymant-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .paymant-box {
+        width: 70%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:800px) {
+    .paymant-box {
+        width: 80%;
+    }
+}
+
 @media (max-width:785px) {
     .donation-text {
         flex-direction: column;
@@ -149,11 +179,6 @@
     }
 
     /* PRODUTOS */
-    .product-donation-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
 
     .product-box h3 {
         margin-top: 10px;
@@ -203,15 +228,18 @@
 
 }
 
-@media (max-width:500px) {
-    
+@media (max-width:650px) {
+
     .product-donation-content {
         display: grid;
         justify-items: center;
         grid-template-columns: 1fr;
         padding: 0 8%;
-    
     }
+
+}
+
+@media (max-width:500px) {
 
     .donation-text p {
         font-size: 1rem;
@@ -220,26 +248,23 @@
     .text-h4 {
         font-size: 1rem;
     }
-    
+
     .location p {
         font-size: 14px;
         display: block;
     }
-    
+
     .location iframe {
         width: 80%;
         height: 250px;
         padding-bottom: 4%;
     }
 
-    .paymant-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
+}
 
-    .paymant-box {
-        width: 70%;
-        margin: 20px 0;
+@media (max-width:425px) {
+    .paymant-text ul li p {
+        margin-top: 5px;
+        font-size: 12px;
     }
 }
