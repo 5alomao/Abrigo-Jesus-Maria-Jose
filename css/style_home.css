@@ -34,12 +34,20 @@
     width: 100%;
 }
 
+@media (max-width:1080px) {
+
+    .home .text-h1 {
+        padding-top: 20%;
+    }
+}
+
 @media (max-width: 785px) {
 
     /* HOME */
     .home {
         padding: 100px 2%;
         flex-direction: column;
+        justify-items: right;
         text-align: center;
         overflow: hidden;
         gap: 5rem;
@@ -62,6 +70,14 @@
     .home-img img {
         width: 100%;
     }
+}
+
+@media (max-width:785px) {
+
+    .home .text-h1 {
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width:500px) {
