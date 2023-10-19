@@ -240,6 +240,10 @@ a {
         padding: 5px 5px;
     }
 
+    .nav-menu {
+        top: 45px;
+    }
+
     .section-title h1 {
         font-size: 2.5rem;
         text-align: center;
