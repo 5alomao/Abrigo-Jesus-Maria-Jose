@@ -6,17 +6,16 @@ menu.addEventListener('click', () => {
     navMenu.classList.toggle('ativo');
 });
 
-// Função para carregar e exibir dados da planilha do Google Sheets
 function loadGoogleSheetData() {
-    const spreadsheetId = '';
+    const spreadsheetId = '1XJ7Pve5EvvgnxTmhZoxV2_n_Wm6g7053qfkkv82c2LE';
     const sheetId = 0;
 
     gapi.client.sheets.spreadsheets.values.get({
         spreadsheetId: spreadsheetId,
-        range: ''
+        range: 'AJMJ-Doadores'
     }).then(function (response) {
         const data = response.result.values;
-        const tableBody = document.querySelector('#actions-table tbody');
+        const tableBody = document.querySelector('#ajmj-donators-table tbody');
 
         tableBody.innerHTML = '';
 
@@ -37,7 +36,7 @@ function loadGoogleSheetData() {
 
 function initGoogleSheetsApi() {
     gapi.client.init({
-        apiKey: '',
+        apiKey: 'AIzaSyCwLuci1O9bHlY0fKzLrkcocBXfxvwQ918',
         discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function () {
         loadGoogleSheetData();
