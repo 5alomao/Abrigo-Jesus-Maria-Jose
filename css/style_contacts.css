@@ -42,6 +42,6 @@
 
 @media (max-width:576px) {
     .contact-content {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 }

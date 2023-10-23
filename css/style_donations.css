@@ -115,9 +115,6 @@
     margin: 10px;
 }
 
-
-
-
 @media (max-width:576px) {
 
     /* Intro */
@@ -144,6 +141,12 @@
         justify-content: center;
     }
 
+    .product-box {
+        width: 250px;
+        height: auto;
+        margin: 20px;
+    }
+
     /* Mapa - Local */
     .text-h4 {
         font-size: 1.1em;
@@ -165,7 +168,23 @@
     }
 
     .payment-box {
-        margin: 40px 0;
+        width: 300px;
+        margin: 40px;
+    }
+
+    .payment-box-text h2 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .payment-box-text p {
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+
+    .payment-box-text img {
+        width: 50%;
+        margin: 10px;
     }
 
 }

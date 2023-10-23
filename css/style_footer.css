@@ -61,7 +61,7 @@
 @media (max-width:576px) {
     .footer-content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     .footer-topic-box {
