@@ -1,14 +1,12 @@
 .donation-text {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .donation-text p {
     width: 50%;
-    padding: 0 8%;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    text-align: center;
+    padding: 8% 0 0 8%;
+    font-size: 1.1rem;
 }
 
 .donation-text img {
@@ -24,30 +22,30 @@
 }
 
 .product-box {
-    background: var(--green);
-    box-shadow: 0 0.1rem 0.5rem #ccc;
-    width: 15rem;
-    height: 30rem;
-    border-radius: 2%;
-    padding: 1.5%;
-    margin-bottom: 40px;
+    background: var(--darkblue);
+    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
     transition: all 0.5s;
 }
 
 .product-box:hover {
-    background: var(--darkblue);
+    background: var(--green);
 }
 
 .product-box h3 {
     font-size: 1.1rem;
     text-align: center;
-    margin-bottom: 10%;
+    padding: 20px;
     font-family: 'Montserrat';
 }
 
 .product-box ul li {
-    margin: 5%;
+    margin: 10px;
     text-align: left;
+    margin-left: 30px;
 }
 
 .product-box div {
@@ -56,6 +54,9 @@
     align-items: center;
 }
 
+.product-box div img {
+    margin: 15px 15px;
+}
 
 .text-h4 {
     font-size: 1.5em;
@@ -67,204 +68,104 @@
 }
 
 .location p {
-    padding: 2% 0;
-    font-size: 1em;
-    display: block;
+    margin: 10px 0;
+    font-size: 1.3rem;
 }
 
 .location iframe {
     width: 80%;
-    height: 250px;
-    padding-bottom: 4%;
+    height: 350px;
+    margin: 50px 0;
 }
 
 /* PAGAMENTO */
-
-.paymant-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.paymant-box {
-    width: 100%;
-    height: 15em;
-    display: flex;
-    margin: 1%;
-    border: 1px solid var(--darkblue);
-    justify-content: space-between;
-    margin: 0 8%;
-}
-
-.paymant-text {
-    width: 70%;
-}
-
-.paymant-text h3 {
-    color: var(--dark);
-    padding: 2% 0 0 2%;
-    font-size: 1.2em;
-    text-align: left;
-    font-family: 'Montserrat';
-}
-
-.paymant-text ul {
-    list-style: none;
-}
-
-.paymant-text ul li {
-    padding: 5%;
-    margin-top: 20px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.paymant-text li p {
-    color: var(--blue);
-    font-weight: bold;
-}
-
-.paymant-img {
-    display: flex;
+.payment-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
-    align-items: center;
-    border-left: 1px solid var(--darkblue);
-    width: 40%;
 }
 
-.paymant-img img {
-    width: 75%;
+.payment-box {
+    width: 350px;
+    height: auto;
+    margin: 0 20px;
+    border: 1px solid var(--darkblue);
+    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
 }
 
-@media (max-width:1200px) {
-
-    .product-donation-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-
-    .product-box ul li {
-        margin-left: 10%;
-    }
-
-    .paymant-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    .paymant-box {
-        width: 70%;
-        margin: 20px 0;
-    }
+.payment-box-text {
+    text-align: center;
 }
 
-@media (max-width:800px) {
-    .paymant-box {
-        width: 80%;
-    }
+.payment-box-text h2 {
+    font-size: 2rem;
+    background-color: darkcyan;
+    padding: 20px;
+    color: var(--white);
 }
 
-@media (max-width:785px) {
+.payment-box-text p {
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.payment-box-text img {
+    width: 50%;
+    margin: 10px;
+}
+
+
+
+
+@media (max-width:576px) {
+
+    /* Intro */
     .donation-text {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
     }
 
     .donation-text p {
-        width: 100%;
+        width: 80%;
+        padding: 0;
+        margin-bottom: 50px;
     }
 
     .donation-text img {
-        margin: 50px auto;
+        margin: auto;
     }
 
     /* PRODUTOS */
-
-    .product-box h3 {
-        margin-top: 10px;
-    }
-
-    .product-box ul li {
-        margin: 5% 0 0 8%;
-    }
-
-    .text-h4 {
-        font-size: 1.2rem;
-    }
-
-    .location p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .paymant-box {
-        display: block;
-        height: auto;
-    }
-
-    .paymant-text {
-        width: 100%;
-    }
-
-    .paymant-text h3 {
-        text-align: center;
-    }
-
-    .paymant-text ul li {
-        padding: 0 15px;
-    }
-
-    .paymant-img {
-        width: 100%;
-        margin: 20px 0;
-        border-left: none;
-        border-top: 1px solid var(--darkblue);
-    }
-
-    .paymant-img img {
-        width: 55%;
-        padding-top: 20px;
-    }
-
-}
-
-@media (max-width:650px) {
-
     .product-donation-content {
         display: grid;
-        justify-items: center;
-        grid-template-columns: 1fr;
-        padding: 0 8%;
+        grid-template-columns: auto;
+        justify-content: center;
     }
 
-}
-
-@media (max-width:500px) {
-
-    .donation-text p {
-        font-size: 1rem;
-    }
-
+    /* Mapa - Local */
     .text-h4 {
-        font-size: 1rem;
+        font-size: 1.1em;
     }
 
     .location p {
-        font-size: 14px;
-        display: block;
+        font-size: 1rem;
     }
 
     .location iframe {
-        width: 80%;
-        height: 250px;
-        padding-bottom: 4%;
+        margin-top: 50px;
+        width: 75%;
+        height: 400px;
     }
 
-}
-
-@media (max-width:425px) {
-    .paymant-text ul li p {
-        margin-top: 5px;
-        font-size: 12px;
+    /* PAGAMENTO */
+    .payment-content {
+        grid-template-columns: auto;
     }
+
+    .payment-box {
+        margin: 40px 0;
+    }
+
 }
