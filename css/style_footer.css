@@ -4,7 +4,7 @@
     padding: 2% 8%;
     text-align: left;
     border-top: 1px solid #d1cccc;
-    margin-top: 5%;
+    margin-top: 100px;
     justify-content: space-between;
 }
 
@@ -58,31 +58,13 @@
     padding-top: 5px;
 } */
 
-@media (max-width:1080px) {
-
+@media (max-width:576px) {
     .footer-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
     }
 
     .footer-topic-box {
-        width: 50%;
-        margin-bottom: 60px;
-    }
-
-    .footer-topic-box h3 {
-        font-size: 1.2rem;
-    }
-
-    .footer-topic-box p,
-    .footer-topic-box ul li a {
-        font-size: 1rem;
-    }
-
-}
-
-@media (max-width:480px) {
-    .footer-content {
-        grid-template-columns: 1fr;
+        margin: 25px 0;
     }
 }
