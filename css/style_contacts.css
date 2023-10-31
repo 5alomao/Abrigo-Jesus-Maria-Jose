@@ -1,26 +1,38 @@
+.contacts {
+    display: grid;
+    justify-content: center;
+}
+
 .contact-content {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 30px;
 }
 
 .contact-box {
     text-align: center;
-    background: var(--darkblue);
+    background: var(--lightblue);
     margin: 30px;
     width: 180px;
     height: auto;
     border-radius: 5px;
-    transition: all 0.5s;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.7s;
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
 }
 
 .contact-box:hover {
-    background: var(--green);
+    background: var(--blue);
+}
+
+.contact-box:hover a,
+.contact-box:hover a h3,
+.contact-box:hover a i {
+    transition: all 0.5s;
+    color: var(--white);
 }
 
 .contact-box a {
-    color: var(--white);
+    color: var(--dark);
 }
 
 .contact-box a h3 {
@@ -32,7 +44,7 @@
 .contact-box a i {
     margin: 10px;
     font-size: 64px;
-    color: var(--white);
+    color: var(--dark);
 }
 
 .contact-box a p {
