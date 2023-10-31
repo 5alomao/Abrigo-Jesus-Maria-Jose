@@ -1,13 +1,38 @@
+.aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* HISTÓRIA */
+.section-history {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.section-history h2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .history-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .history-text {
-    width: 50%;
+    width: 95%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-align: justify;
+    padding-left: 7.5%;
 }
 
 .history-text ul {
@@ -21,7 +46,7 @@
 }
 
 .history-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -29,63 +54,78 @@
 .history-text #more-btn-history-div {
     display: flex;
     justify-content: right;
+    margin-top: 10%;
 }
 
 .history-img {
-    width: 40%;
-    margin: auto 0;
+    width: 75%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .history-img img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
 }
 
 /* MISSÃO VISÃO VALORES */
+
+.section-mvv {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 .mvv-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-around;
-    margin: 0 4% 4% 4%;
+    justify-items: center;
+    margin: 0 30px;
 }
 
 .mvv-box {
     display: block;
-    background: var(--darkblue);
+    background: var(--lightblue);
     width: 20rem;
     height: 15rem;
     border-radius: 2%;
     padding: 1.5%;
     color: var(--dark);
     text-align: left;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
     transition: all 0.5s;
 }
 
 .mvv-box:hover {
     cursor: pointer;
-    background: var(--green);
+    background: var(--blue);
 }
 
 .mvv-box .mvv-box-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 .mvv-box h3 {
     font-size: 2rem;
     text-align: center;
     font-family: 'Montserrat';
+    border-bottom: 1px solid var(--dark);
+    width: fit-content;
 }
 
 .mvv-box p {
     font-size: 1.1rem;
-    margin: 10px 0;
-    text-align: left;
+    margin-top: 15px;
+    padding: 20px;
+    text-align: justify;
 }
 
 .mvv-box .mvv-img-div {
