@@ -6,6 +6,12 @@ menu.addEventListener('click', () => {
     navMenu.classList.toggle('ativo');
 });
 
+$('.carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+});
+
 function loadGoogleSheetData() {
     const spreadsheetId = '1XJ7Pve5EvvgnxTmhZoxV2_n_Wm6g7053qfkkv82c2LE';
     const sheetId = 0;
