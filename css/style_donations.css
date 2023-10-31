@@ -1,38 +1,104 @@
+.donations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.donation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 .donation-text {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-items: center;
+    align-items: center;
 }
 
 .donation-text p {
-    width: 50%;
-    padding: 8% 0 0 8%;
-    font-size: 1.1rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .donation-text img {
-    margin: auto;
+    width: 55%;
 }
 
-/* PRODUTOS */
-.product-donation-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 8%;
+/* O Que Doar */
+.section-what-to-donate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-items: center;
+}
 
+.section-what-to-donate h2 {
+    justify-self: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+div.carousel {
+    width: 90%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 5fr auto;
+}
+
+.carousel button {
+    margin: 20px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    background-color: transparent;
+
+}
+
+.carousel button:nth-child(1) {
+    background-image: url("../images/icone_prev.png");
+}
+
+.carousel button:nth-child(3) {
+    background-image: url("../images/icone_next.png");
 }
 
 .product-box {
-    background: var(--darkblue);
-    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
-    width: 250px;
-    height: auto;
+    background: var(--lightblue);
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
     border-radius: 10px;
-    margin-bottom: 50px;
-    transition: all 0.5s;
+    transition: all 0.7s;
+    margin: 20px;
 }
 
 .product-box:hover {
-    background: var(--green);
+    background: var(--blue);
+}
+
+.product-box:hover a {
+    color: var(--white);
+    border-bottom-color: var(--white);
 }
 
 .product-box h3 {
@@ -42,29 +108,43 @@
     font-family: 'Montserrat';
 }
 
+.product-box ul {
+    list-style: none;
+    border-top: 2px solid var(--white);
+}
+
 .product-box ul li {
     margin: 10px;
-    text-align: left;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .product-box div {
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.product-box div img {
-    margin: 15px 15px;
+.product-box div a {
+    color: blue;
+    border-bottom: 1px solid blue;
+    transition: all 0.7s;
+    width: fit-content;
+}
+
+.location {
+    width: 100%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .text-h4 {
     font-size: 1.5em;
     text-align: center;
-}
-
-.location {
-    text-align: center;
+    margin: 50px 0 0 0;
 }
 
 .location p {
@@ -79,18 +159,31 @@
 }
 
 /* PAGAMENTO */
+
+.section-payment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 .payment-content {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.payment-content #img-pix {
+    width: 90%;
+    border-radius: 50%;
 }
 
 .payment-box {
     width: 350px;
     height: auto;
-    margin: 0 20px;
-    border: 1px solid var(--darkblue);
-    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
 }
 
 .payment-box-text {
@@ -113,6 +206,45 @@
 .payment-box-text img {
     width: 50%;
     margin: 10px;
+}
+
+/* Outras Formas de Ajudar */
+.section-help {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.section-help h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.help-text {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 70%;
+    margin: 30px;
+}
+
+.help-text span {
+    font-size: 32px;
+    padding: 15px;
+    background-color: var(--lightblue);
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.help-text p {
+    font-weight: bold;
+    
 }
 
 @media (max-width:576px) {
