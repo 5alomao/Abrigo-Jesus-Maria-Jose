@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Abrigo Jesus Maria José</title>
 </head>
 
@@ -38,7 +39,6 @@
             </div>
         </nav>
     </header>
-
     <main>
         <!-- Página Inicial -->
         <section id="home" class="home">
@@ -49,7 +49,6 @@
                     Dependemos da generosidade de pessoas como você para continuar a realizar nossa missão. Sua doação
                     faz a diferença e pode mudar a vida de uma criança e/ou adolescente.
                 </p>
-                <a href="donations" class="more-btn">Saiba Mais</a>
             </div>
             <div class="home-img">
                 <img src="images/logo_abrigo.png" alt="Imagem da logo do Abrigo Jesus Maria Jose.">
@@ -69,7 +68,7 @@
             </header>
 
             <!-- História -->
-            <section>
+            <section class="section-history">
                 <h2 class="section-topic-h2">Nossa História</h2>
                 <div class="history-content">
                     <div class="history-text">
@@ -96,12 +95,6 @@
                             materiais, como espirituais a muitas crianças e jovens que por aqui passaram e hoje são
                             verdadeiros profissionais, e eximeos responsáveis dedicados aos seus lares e familiares.
                         </p>
-
-                        <p>
-                            Quando diante da necessidade de se atender ao grande número de acolhidos, desprovidos de
-                            lares e famílias ajustadas, pessoas de bem começaram a se preocupar com tais crianças,
-                            levando avante a idéia de se fundar, essa instituição em 1948.
-                        </p>
                         <div id="more-btn-history-div">
                             <a href="#" id="more-btn-history" class="more-btn">Saiba Mais</a>
                         </div>
@@ -115,7 +108,7 @@
             </section>
 
             <!-- Missão Visão e Valores -->
-            <section>
+            <section class="section-mvv">
                 <h2 class="section-topic-h2">Missão, Visão e Valores</h2>
                 <div class="mvv-content">
                     <div class="mvv-box">
@@ -153,7 +146,7 @@
         </section>
 
         <!-- Doações -->
-        <section id="donations">
+        <section id="donations" class="donations">
             <header class="section-title">
                 <h1>Doações</h1>
                 <h4>Colabore com o Abrigo Jesus Maria e José</h4>
@@ -163,153 +156,189 @@
                     <span></span>
                 </div>
             </header>
+            <div class="donation-content">
+                <div class="donation-text">
+                    <p>
+                        A Instituição conta com a ajuda da sociedade para acolhimento
+                        e manutençao de crianças e adolescentes
+                        resgatadas de situação de vulnerabilidade social.
+                    </p>
+                    <img src="images/icone_doacoes.png" alt="">
+                </div>
 
-            <div class="donation-text">
-                <p>
-                    A Instituição conta com a ajuda da sociedade para acolhimento
-                    e manutençao de crianças e adolescentes
-                    resgatadas de situação de vulnerabilidade social.
-                </p>
-                <img src="images/icone_doacoes.png" alt="">
+                <!-- O que Doar -->
+                <section class="section-what-to-donate">
+                    <h2 class="section-topic-h2">Nos Ajude Doando Produtos</h2>
+                    <div class="carousel">
+                        <div class="product-box">
+                            <h3>Alimentícios</h3>
+                            <ul>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                            </ul>
+                            <div>
+                                <a href="">Visualizar Urgências</a>
+                                <img src="images/icone_alimentos.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <h3>Higiene</h3>
+                            <ul>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                            </ul>
+                            <div>
+                                <a href="">Visualizar Urgências</a>
+                                <img src="images/icone_higiene.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <h3>Limpeza</h3>
+                            <ul>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                                <li>Produto Aqui</li>
+                            </ul>
+                            <div>
+                                <a href="">Visualizar Urgências</a>
+                                <img src="images/icone_limpeza.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <h3>Roupas</h3>
+                            <ul>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                                <li>Roupa Aqui</li>
+                            </ul>
+                            <div>
+                                <a href="">Visualizar Urgências</a>
+                                <img src="images/icone_roupas.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <h3>Brinquedos</h3>
+                            <ul>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                                <li>Brinquedo Aqui</li>
+                            </ul>
+                            <div>
+                                <a href="">Visualizar Urgências</a>
+                                <img src="images/icone_brinquedos.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <address class="location">
+                        <h4 class="text-h4">Sua ajuda poderá ser entregue no Abrigo Jesus Maria José</h4>
+                        <p>Rua Professor José Cândido, 284, Centro, Machado - MG</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.9197548879682!2d-45.92328607178934!3d-21.676340227670508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca136a319ab859%3A0xaf66b703ed7ea864!2sAbrigo%20Jesus%20Maria%20Jos%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1695985985414!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </address>
+                </section>
+
+                <!-- Por onde Doar -->
+                <section class="section-payment">
+                    <h2 class="section-topic-h2">Nos Ajude Doando Dinheiro</h2>
+                    <div class="payment-content">
+                        <div class="payment-box">
+                            <div class="payment-box-text">
+                                <h2>PIX <i class="fa-brands fa-pix"></i></h2>
+                                <p>Tipo de Chave: <span>E-MAIL</span></p>
+                                <div>
+                                    <img src="images/imagem_qrcode_pix.jpeg" alt="">
+                                </div>
+                                <p>admabrigojmj@gmail.com</p>
+                            </div>
+                        </div>
+                        <img id="img-pix" src="images/imagem_pix.jpg" alt="">
+                        <div class="payment-box">
+                            <div class="payment-box-text">
+                                <h2>PIX <i class="fa-brands fa-pix"></i></h2>
+                                <p>Tipo de Chave: <span>CNPJ</span></p>
+                                <div>
+                                    <img src="images/imagem_qrcode_pix.jpeg" alt="">
+                                </div>
+                                <p>19.369.784/0001-58</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Outras Formas de Ajudar -->
+                <section class="section-help">
+                    <h2 class="section-topic-h2">Outras Formas de Ajudar</h2>
+                    <div class="help-text">
+                        <span>1</span>
+                        <p>Seja um Voluntário: Se você tem tempo e habilidades para compartilhar, 
+                            considere se tornar um voluntário e fazer a diferença na vida de nossos jovens.</p>
+                    </div>
+                    <div class="help-text">
+                        <span>2</span>
+                        <p>Compartilhe Nossa História: Ajude a aumentar nossa visibilidade compartilhando 
+                            nossa história e missão com sua rede de contatos.</p>
+                    </div>
+                    <div class="help-text">
+                        <span>3</span>
+                        <p>Parcerias Empresariais: Se sua empresa está interessada em apoiar uma causa social, 
+                            entre em contato para discutir possíveis parcerias.</p>
+                    </div>
+                </section>
             </div>
-
-            <!-- O que Doar -->
-            <section>
-                <h2 class="section-topic-h2">Nos Ajude Doando Produtos</h2>
-                <div class="product-donation-content">
-                    <div class="product-box">
-                        <h3>Produtos Alimentícios</h3>
-                        <ul>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_alimentos.png" alt="">
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <h3>Produtos de Higiene</h3>
-                        <ul>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_higiene.png" alt="">
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <h3>Produtos de Limpeza</h3>
-                        <ul>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                            <li>Produto Aqui</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_limpeza.png" alt="">
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <h3>Brinquedos</h3>
-                        <ul>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                            <li>Brinquedo Aqui</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_brinquedos.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <h4 class="text-h4">Sua ajuda poderá ser entregue no Abrigo Jesus Maria José</h4>
-                <address class="location">
-                    <p>Rua Professor José Cândido, 284, Centro, Machado - MG</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.9197548879682!2d-45.92328607178934!3d-21.676340227670508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca136a319ab859%3A0xaf66b703ed7ea864!2sAbrigo%20Jesus%20Maria%20Jos%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1695985985414!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </address>
-            </section>
-
-            <!-- Por onde Doar -->
-            <section>
-                <h2 class="section-topic-h2">Nos Ajude Doando Dinheiro</h2>
-                <div class="payment-content">
-                    <div class="payment-box">
-                        <div class="payment-box-text">
-                            <h2>PIX <i class="fa-brands fa-pix"></i></h2>
-                            <p>Tipo de Chave: <span>E-mail</span></p>
-                            <div>
-                                <img src="images/imagem_qrcode_pix.jpeg" alt="">
-                            </div>
-                            <p>admabrigojmj@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="payment-box">
-                        <div class="payment-box-text">
-                            <h2>PIX <i class="fa-brands fa-pix"></i></h2>
-                            <p>Tipo de Chave: <span>CNPJ</span></p>
-                            <div>
-                                <img src="images/imagem_qrcode_pix.jpeg" alt="">
-                            </div>
-                            <p>19.369.784/0001-58</p>
-                        </div>
-                    </div>
-                    <div class="payment-box">
-                        <div class="payment-box-text">
-                            <h2>PIX <i class="fa-brands fa-pix"></i></h2>
-                            <p>Tipo de Chave: <span>Telefone</span></p>
-                            <div>
-                                <img src="images/imagem_qrcode_pix.jpeg" alt="">
-                            </div>
-                            <p>XX XXXXX-XXXX</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </section>
 
         <!-- Contatos -->
-        <section id="contacts">
+        <section id="contacts" class="contacts">
             <header class="section-title">
                 <h1>Contatos</h1>
                 <h4>Algumas Formas De Nos Contatar</h4>
@@ -373,7 +402,7 @@
         </section>
 
         <!-- DOADORES - COLABORADORES - APOIADORES -->
-        <section id="donators">
+        <section id="donators" class="donators">
             <header class="section-title">
                 <h1>Doadores</h1>
                 <div class="circles">
@@ -397,8 +426,8 @@
                 </table>
             </div>
         </section>
-
     </main>
+
     <footer>
         <div class="footer-content">
             <div class="footer-topic-box">
@@ -425,18 +454,56 @@
                 <h3>Imagens / Icones</h3>
                 <ul>
                     <li>
-                        <a href="https://www.flaticon.com/free-icons/hand" title="hand icons" target="_blank">Flaticon -
-                            Mão Caridade</a>
+                        <a href="https://www.flaticon.com/free-icons/donate" title="donate icons">Flaticon - Mão de
+                            Caridade</a>
                     </li>
                     <li>
                         <a href="https://www.flaticon.com/free-icons/supplies" title="supplies icons">Flaticon - Caixa
                             de Alimentos</a>
                     </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Flaticon - Seta
+                            Próximo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/br/icones-gratis/diamante" title="diamante ícones">Flaticon -
+                            Diamante</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/br/icones-gratis/alvo" title="alvo ícones">Flaticon - Alvo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/br/icones-gratis/olho" title="olho ícones">Flaticon -
+                            Binóculo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icons/handwash" title="handwash icons">Flaticon -
+                            Higiene</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icons/broom" title="broom icons">Flaticon - Limpeza</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icons/shirt" title="shirt icons">Flaticon - Camisa</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/br/icones-gratis/brinquedos"
+                            title="brinquedos ícones">Flaticon - Brinquedo</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://br.freepik.com/vetores-gratis/codigo-qr-de-digitalizacao-para-smartphone_9470308.htm#query=pix&position=29&from_view=search&track=sph">
+                            Freepik - Pix</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
