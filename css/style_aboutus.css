@@ -85,7 +85,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin: 0 30px;
 }
 
 .mvv-box {
@@ -99,6 +98,7 @@
     text-align: left;
     box-shadow: 0 0.1rem 0.5rem var(--dark);
     transition: all 0.5s;
+
 }
 
 .mvv-box:hover {
@@ -135,47 +135,75 @@
 }
 
 @media (max-width:576px) {
-
-    /* História */
-    .history-content {
+    .aboutus {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+    }
+
+    /* HISTÓRIA */
+    .section-history {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .section-history h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
     }
 
     .history-text {
-        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: justify;
+        padding: 0 5%;
+    }
+
+    .history-text ul li {
+        font-size: 1rem;
+    }
+
+    .history-text p {
+        font-size: 1rem;
     }
 
     .history-text #more-btn-history-div {
-        display: flex;
         justify-content: center;
-        margin: 50px 0;
+        margin-bottom: 10%;
     }
 
     .history-img {
-        width: 100%;
-        margin: auto 0;
+        width: 70%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 
-    .history-img img {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 0.1rem 0.5rem #ccc;
+    /* MISSÃO VISÃO VALORES */
+
+    .section-mvv {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 
-    /* MVV */
     .mvv-content {
-        display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 
     .mvv-box {
-        margin: 20px;
-    }
-
-    .mvv-box p {
-        text-align: justify;
-        padding: 0 20px;
+        margin: 40px 0;
     }
 
 }
