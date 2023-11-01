@@ -142,7 +142,7 @@ div.carousel {
 }
 
 .text-h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
     margin: 50px 0 0 0;
 }
@@ -208,80 +208,107 @@ div.carousel {
     margin: 10px;
 }
 
-/* Outras Formas de Ajudar */
+/* Outras Formas de Ajudar
 .section-help {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .section-help h2 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-items: center;
+}
+
+.help-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 0 25px;
 }
 
 .help-text {
     display: flex;
-    align-items: center;
     justify-self: center;
-    width: 70%;
     margin: 30px;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 20px 10px;
+    border-radius: 30px;
+    width: 80%;
+    height: 250px;
 }
 
-.help-text span {
-    font-size: 32px;
-    padding: 15px;
-    background-color: var(--lightblue);
-    box-shadow: 0 0.1rem 0.5rem var(--dark);
-    border-radius: 50%;
-    margin-right: 20px;
+.help-text .span-topic {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+
 }
 
 .help-text p {
-    font-weight: bold;
-    
-}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: var(--dark);
+} */
 
 @media (max-width:576px) {
 
-    /* Intro */
+    .donations {
+        grid-template-columns: 1fr;
+    }
+
+    .donation-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-end: 2;
+    }
+
     .donation-text {
         display: grid;
-        grid-template-columns: auto;
-        justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 
     .donation-text p {
-        width: 80%;
-        padding: 0;
-        margin-bottom: 50px;
+        width: 70%;
+        font-size: 1rem;
     }
 
     .donation-text img {
-        margin: auto;
+        width: 45%;
     }
 
-    /* PRODUTOS */
-    .product-donation-content {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
+    /* O Que Doar */
+    .section-what-to-donate {
+        grid-template-columns: 1fr;
+        grid-column-end: 2;
     }
 
-    .product-box {
-        width: 250px;
-        height: auto;
-        margin: 20px;
+    .section-what-to-donate h2 {
+        justify-self: left;
+        grid-column-end: 2;
     }
 
-    /* Mapa - Local */
+    div.carousel {
+        width: 100%;
+        grid-column-end: 2;
+        grid-template-columns: auto 1fr auto;
+
+    }
+
+    .location {
+        grid-column-end: 2;
+    }
+
     .text-h4 {
-        font-size: 1.1em;
+        font-size: 1.2rem;
+
     }
 
     .location p {
@@ -289,34 +316,25 @@ div.carousel {
     }
 
     .location iframe {
-        margin-top: 50px;
-        width: 75%;
+        width: 80%;
         height: 400px;
     }
 
     /* PAGAMENTO */
+
+    .section-payment {
+        grid-column-end: 2;
+
+    }
+
     .payment-content {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 50px;
     }
 
-    .payment-box {
-        width: 300px;
-        margin: 40px;
-    }
-
-    .payment-box-text h2 {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-
-    .payment-box-text p {
-        margin: 10px;
-        font-size: 1.2rem;
-    }
-
-    .payment-box-text img {
-        width: 50%;
-        margin: 10px;
+    .payment-content #img-pix {
+        width: 70%;
     }
 
 }
