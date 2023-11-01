@@ -53,7 +53,16 @@
 }
 
 @media (max-width:576px) {
-    .contact-content {
-        grid-template-columns: auto;
+
+    .contacts {
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 30px;
+    }
+
 }
