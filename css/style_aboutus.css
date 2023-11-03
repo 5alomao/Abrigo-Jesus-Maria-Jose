@@ -1,8 +1,3 @@
-.aboutus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 /* HISTÓRIA */
 .section-history {
     grid-column-start: 1;
@@ -26,13 +21,16 @@
 }
 
 .history-text {
-    width: 95%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    text-align: justify;
-    padding-left: 7.5%;
+}
+
+.history-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .history-text ul {
@@ -41,15 +39,11 @@
 
 .history-text ul li {
     margin: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.history-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 .history-text #more-btn-history-div {
     display: flex;
@@ -78,6 +72,10 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+
+.section-mvv h2 {
+    margin-top: 80px;
 }
 
 .mvv-content {
