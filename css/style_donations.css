@@ -297,7 +297,12 @@ div.carousel {
         width: 100%;
         grid-column-end: 2;
         grid-template-columns: auto 1fr auto;
+    }
 
+    .carousel button {
+        margin: 0;
+        width: 40px;
+        height: 40px;
     }
 
     .location {
