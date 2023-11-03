@@ -9,9 +9,10 @@ menu.addEventListener('click', () => {
 const navItems = document.querySelectorAll('.nav-menu .nav-item');
 
 navItems.forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelector('.nav-menu').classList.remove('ativo');
-  });
+    item.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+        navMenu.classList.remove('ativo');
+    });
 });
 
 $('.carousel').slick({

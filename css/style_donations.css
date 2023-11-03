@@ -91,11 +91,6 @@ div.carousel {
     background: var(--blue);
 }
 
-.product-box:hover a {
-    color: var(--white);
-    border-bottom-color: var(--white);
-}
-
 .product-box h3 {
     font-size: 1.1rem;
     text-align: center;
@@ -116,15 +111,8 @@ div.carousel {
 .product-box div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
-}
-
-.product-box div a {
-    color: blue;
-    border-bottom: 1px solid blue;
-    transition: all 0.7s;
-    width: fit-content;
 }
 
 .location {
@@ -340,4 +328,15 @@ div.carousel {
         width: 70%;
     }
 
+}
+
+@media (max-width:425px) {
+    .location h4 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .location p {
+        font-size: 1.1rem;
+    }
 }

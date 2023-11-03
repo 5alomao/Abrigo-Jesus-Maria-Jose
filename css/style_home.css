@@ -122,3 +122,32 @@
     }
 
 }
+
+@media (max-width:425px) {
+
+    .home-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-text h4 {
+        margin-bottom: 4rem;
+    }
+
+    .home-infos {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .info-box {
+        margin: 0 auto;
+    }
+
+    .home-infos h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0;
+    }
+}
