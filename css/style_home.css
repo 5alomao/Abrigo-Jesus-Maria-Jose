@@ -1,53 +1,124 @@
-.home {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8% 65px 8%;
-}
-
 .home-text {
-    width: 80%;
-}
-
-.home-text .text-h1 {
-    font-size: 4rem;
-    line-height: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.home-text .text-h4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
     text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
+    padding-top: 40px;
 }
 
-.text-h4 span {
+.home-text h1 {
+    font-size: 4rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.home-text h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0 7rem 0;
+}
+
+.home-text h4 span {
     color: var(--red);
 }
 
 .home-text p {
-    margin-bottom: 4rem;
+    font-size: 1.2rem;
 }
 
 .home-img img {
     width: 100%;
+    display: block;
+}
+
+.home-infos {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 0;
+}
+
+.home-infos h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+}
+
+.info-box i {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 50px;
+    color: var(--darkbluelow);
+    width: 80px;
+    text-align: center;
+    border-right: 3px solid var(--darkbluelow);
+}
+
+.info-box div {
+    margin: auto 10px;
+    text-align: left;
 }
 
 @media (max-width:576px) {
     .home {
-        padding-top: 100px;
-        display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .home-text {
-        width: 100%;
-        height: auto;
-    }
-
-    .home-text,
-    .home-text .text-h4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
         text-align: center;
     }
+
+    .home-text h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-text h4 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .home-img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .home-img img {
+        width: 100%;
+        display: block;
+    }
+
+    .home-infos {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .info-box {
+        margin: 0 auto;
+    }
+
+    .home-infos h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0;
+    }
+
 }

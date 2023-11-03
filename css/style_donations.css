@@ -1,38 +1,99 @@
+.donation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 .donation-text {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-items: center;
+    align-items: center;
 }
 
 .donation-text p {
-    width: 50%;
-    padding: 8% 0 0 8%;
-    font-size: 1.1rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .donation-text img {
-    margin: auto;
+    width: 55%;
 }
 
-/* PRODUTOS */
-.product-donation-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 8%;
+/* O Que Doar */
+.section-what-to-donate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-items: center;
+}
 
+.section-what-to-donate h2 {
+    justify-self: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+div.carousel {
+    width: 90%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 5fr auto;
+}
+
+.carousel button {
+    margin: 20px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    background-color: transparent;
+
+}
+
+.carousel button:nth-child(1) {
+    background-image: url("../images/icone_prev.png");
+}
+
+.carousel button:nth-child(3) {
+    background-image: url("../images/icone_next.png");
 }
 
 .product-box {
-    background: var(--darkblue);
-    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
-    width: 250px;
-    height: auto;
+    background: var(--lightblue);
+    box-shadow: 0 0.1rem 0.5rem var(--dark);
     border-radius: 10px;
-    margin-bottom: 50px;
-    transition: all 0.5s;
+    transition: all 0.7s;
+    margin: 20px;
 }
 
 .product-box:hover {
-    background: var(--green);
+    background: var(--blue);
+}
+
+.product-box:hover a {
+    color: var(--white);
+    border-bottom-color: var(--white);
 }
 
 .product-box h3 {
@@ -42,29 +103,43 @@
     font-family: 'Montserrat';
 }
 
+.product-box ul {
+    list-style: none;
+    border-top: 2px solid var(--white);
+}
+
 .product-box ul li {
     margin: 10px;
-    text-align: left;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .product-box div {
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.product-box div img {
-    margin: 15px 15px;
-}
-
-.text-h4 {
-    font-size: 1.5em;
-    text-align: center;
+.product-box div a {
+    color: blue;
+    border-bottom: 1px solid blue;
+    transition: all 0.7s;
+    width: fit-content;
 }
 
 .location {
+    width: 100%;
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.location h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 50px 0 0 0;
 }
 
 .location p {
@@ -79,18 +154,31 @@
 }
 
 /* PAGAMENTO */
+
+.section-payment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 .payment-content {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.payment-content #img-pix {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .payment-box {
-    width: 350px;
-    height: auto;
-    margin: 0 20px;
-    border: 1px solid var(--darkblue);
-    box-shadow: 0 0.1rem 0.5rem var(--darkblue);
+    width: 300px;
+    height: 350px;
+    border: 2px solid var(--darkbluelow);
+    border-radius: 15px;
 }
 
 .payment-box-text {
@@ -102,12 +190,14 @@
     background-color: darkcyan;
     padding: 20px;
     color: var(--white);
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
 }
 
 .payment-box-text p {
-    margin: 10px;
+    margin: 10px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .payment-box-text img {
@@ -115,41 +205,108 @@
     margin: 10px;
 }
 
+/* Outras Formas de Ajudar
+.section-help {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.section-help h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-items: center;
+}
+
+.help-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.help-text {
+    display: flex;
+    justify-self: center;
+    margin: 30px;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 20px 10px;
+    border-radius: 30px;
+    width: 80%;
+    height: 250px;
+}
+
+.help-text .span-topic {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.help-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: var(--dark);
+} */
+
 @media (max-width:576px) {
 
-    /* Intro */
+    .donations {
+        grid-template-columns: 1fr;
+    }
+
+    .donation-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-end: 2;
+    }
+
     .donation-text {
         display: grid;
-        grid-template-columns: auto;
-        justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 
     .donation-text p {
         width: 80%;
-        padding: 0;
-        margin-bottom: 50px;
+        font-size: 1rem;
+        margin: 30px 0 10px 0;
     }
 
     .donation-text img {
-        margin: auto;
+        width: 45%;
     }
 
-    /* PRODUTOS */
-    .product-donation-content {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
+    /* O Que Doar */
+    .section-what-to-donate {
+        grid-template-columns: 1fr;
+        grid-column-end: 2;
     }
 
-    .product-box {
-        width: 250px;
-        height: auto;
-        margin: 20px;
+    .section-what-to-donate h2 {
+        justify-self: left;
+        grid-column-end: 2;
     }
 
-    /* Mapa - Local */
+    div.carousel {
+        width: 100%;
+        grid-column-end: 2;
+        grid-template-columns: auto 1fr auto;
+
+    }
+
+    .location {
+        grid-column-end: 2;
+    }
+
     .text-h4 {
-        font-size: 1.1em;
+        font-size: 1.2rem;
+
     }
 
     .location p {
@@ -157,34 +314,25 @@
     }
 
     .location iframe {
-        margin-top: 50px;
-        width: 75%;
+        width: 80%;
         height: 400px;
     }
 
     /* PAGAMENTO */
+
+    .section-payment {
+        grid-column-end: 2;
+
+    }
+
     .payment-content {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 50px;
     }
 
-    .payment-box {
-        width: 300px;
-        margin: 40px;
-    }
-
-    .payment-box-text h2 {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-
-    .payment-box-text p {
-        margin: 10px;
-        font-size: 1.2rem;
-    }
-
-    .payment-box-text img {
-        width: 50%;
-        margin: 10px;
+    .payment-content #img-pix {
+        width: 70%;
     }
 
 }
