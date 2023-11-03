@@ -6,10 +6,27 @@ menu.addEventListener('click', () => {
     navMenu.classList.toggle('ativo');
 });
 
+const navItems = document.querySelectorAll('.nav-menu .nav-item');
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.nav-menu').classList.remove('ativo');
+  });
+});
+
 $('.carousel').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 function loadGoogleSheetData() {
