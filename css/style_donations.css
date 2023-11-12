@@ -3,28 +3,36 @@
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 
 .donation-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-items: center;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
     align-items: center;
 }
 
 .donation-text p {
     width: 80%;
-    text-align: center;
-    font-size: 1.3rem;
+    font-size: 19px;
+    text-align: justify;
 }
 
-.donation-text img {
+.donation-text p i {
+    display: block;
+    font-size: 32px;
+    color: var(--darkbluelow);
+}
+
+.donation-img {
+    display: flex;
+}
+
+.donation-img img {
+    margin: 0 auto;
     width: 55%;
 }
 
@@ -34,8 +42,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
     justify-items: center;
 }
 
@@ -48,19 +54,17 @@
 }
 
 div.carousel {
-    width: 90%;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
     align-items: center;
-    grid-template-columns: auto 5fr auto;
+    grid-template-columns: auto 1fr auto;
 }
 
 .carousel button {
-    margin: 20px;
-    padding: 0;
     width: 80px;
     height: 80px;
     border: none;
@@ -80,38 +84,36 @@ div.carousel {
 }
 
 .product-box {
-    background: var(--lightblue);
-    box-shadow: 0 0.1rem 0.5rem var(--dark);
-    border-radius: 10px;
-    transition: all 0.7s;
+    background: linear-gradient(var(--blue-logo), var(--lightblue));
     margin: 20px;
-}
-
-.product-box:hover {
-    background: var(--blue);
+    border-radius: 5px;
 }
 
 .product-box h3 {
-    font-size: 1.1rem;
+    font-size: 28px;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
     font-family: 'Montserrat';
 }
 
 .product-box ul {
-    list-style: none;
-    border-top: 2px solid var(--white);
+    margin-left: 30px;
 }
 
 .product-box ul li {
     margin: 10px;
-    text-align: center;
+    font-size: 19px;
+    text-align: left;
 }
 
 .product-box div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    padding: 10px;
+}
+
+.product-box div img {
     padding: 10px;
 }
 
@@ -122,23 +124,24 @@ div.carousel {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin: 50px 0;
 }
 
 .location h4 {
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: 500;
     text-align: center;
-    margin: 50px 0 0 0;
 }
 
 .location p {
     margin: 10px 0;
-    font-size: 1.3rem;
+    font-size: 19px;
 }
 
 .location iframe {
     width: 80%;
     height: 350px;
-    margin: 50px 0;
+    padding: 20px 0;
 }
 
 /* PAGAMENTO */
@@ -153,39 +156,46 @@ div.carousel {
 .payment-content {
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
 }
 
-.payment-content #img-pix {
-    width: 100%;
-    border-radius: 50%;
+.product-box-img {
+    display: flex;
+}
+
+.payment-box-img img {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 100%;
+    display: block;
 }
 
 .payment-box {
     width: 300px;
     height: 350px;
-    border: 2px solid var(--darkbluelow);
-    border-radius: 15px;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
 }
 
 .payment-box-text {
     text-align: center;
 }
 
-.payment-box-text h2 {
-    font-size: 2rem;
+.payment-box-text h3 {
+    font-size: 24px;
     background-color: darkcyan;
     padding: 20px;
     color: var(--white);
-    border-top-right-radius: 11px;
-    border-top-left-radius: 11px;
+    border-top-right-radius: px;
+    border-top-left-radius: 2px;
 }
 
 .payment-box-text p {
     margin: 10px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
+    font-size: 19px;
 }
 
 .payment-box-text img {
@@ -193,57 +203,7 @@ div.carousel {
     margin: 10px;
 }
 
-/* Outras Formas de Ajudar
-.section-help {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-
-.section-help h2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-items: center;
-}
-
-.help-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    padding: 0 25px;
-}
-
-.help-text {
-    display: flex;
-    justify-self: center;
-    margin: 30px;
-    text-align: center;
-    background-color: var(--blue);
-    padding: 20px 10px;
-    border-radius: 30px;
-    width: 80%;
-    height: 250px;
-}
-
-.help-text .span-topic {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: bold;
-
-}
-
-.help-text p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-    color: var(--dark);
-} */
-
-@media (max-width:576px) {
-
+@media (max-width: 576px) {
     .donations {
         grid-template-columns: 1fr;
     }
@@ -263,7 +223,7 @@ div.carousel {
     .donation-text p {
         width: 80%;
         font-size: 1rem;
-        margin: 30px 0 10px 0;
+        margin: 40px auto;
     }
 
     .donation-text img {
@@ -285,6 +245,7 @@ div.carousel {
         width: 100%;
         grid-column-end: 2;
         grid-template-columns: auto 1fr auto;
+        padding: 0 30px;
     }
 
     .carousel button {
@@ -297,13 +258,12 @@ div.carousel {
         grid-column-end: 2;
     }
 
-    .text-h4 {
-        font-size: 1.2rem;
-
+    .location h4 {
+        font-size: 18px;
     }
 
     .location p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .location iframe {
@@ -328,15 +288,24 @@ div.carousel {
         width: 70%;
     }
 
+    .payment-box-img img {
+        width: 300px;
+        height: 300px;
+    }
+
 }
 
 @media (max-width:425px) {
     .location h4 {
-        font-size: 1.3rem;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .location p {
-        font-size: 1.1rem;
+        font-size: 16px;
+    }
+
+    div.carousel {
+        padding: 0;
     }
 }

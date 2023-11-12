@@ -1,230 +1,110 @@
-/* HISTÓRIA */
-.section-history {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.who-we-are,
+.biography {
+    grid-column: 1/3;
+    text-align: justify;
 }
 
-.section-history h2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.who-we-are p::first-letter,
+.biography p::first-letter {
+    margin-left: 40px;
 }
 
-.history-content {
+.who-we-are p,
+.biography-text p,
+.who-we-are-text ul li,
+.biography-contributions ul li,
+.who-we-are span,
+.who-we-are em {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+}
+
+.who-we-are-content,
+.biography-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    margin: 20px 0;
+
 }
 
-.history-text {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.history-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.history-text ul {
-    margin: 20px 40px;
-}
-
-.history-text ul li {
-    margin: 5px;
-    font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-.history-text #more-btn-history-div {
-    display: flex;
-    justify-content: right;
-    margin-top: 10%;
-}
-
-.history-img {
-    width: 75%;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.history-img img {
+.who-we-are-text {
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0.1rem 0.5rem var(--dark);
 }
 
-/* MISSÃO VISÃO VALORES */
-
-.section-mvv {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.who-we-are-text p,
+.biography-text p,
+.who-we-are-text ul {
+    margin-bottom: 15px;
 }
 
-.section-mvv h2 {
-    margin-top: 80px;
+.who-we-are-text ul li,
+.biography-contributions ul li {
+    margin-left: 20px;
+    padding: 5px;
 }
 
-.mvv-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.mvv-box {
+.who-we-are-img img,
+.biography-img img {
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
     display: block;
-    background: var(--lightblue);
-    width: 20rem;
-    height: 15rem;
-    border-radius: 2%;
-    padding: 1.5%;
-    color: var(--dark);
-    box-shadow: 0 0.1rem 0.5rem var(--dark);
-    transition: all 0.5s;
-
 }
 
-.mvv-box:hover {
-    cursor: pointer;
-    background: var(--blue);
-}
+@media (max-width: 576px) {
 
-.mvv-box .mvv-box-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
+    .who-we-are p::first-letter,
+    .biography p::first-letter {
+        margin-left: 40px;
+    }
 
-.mvv-box h3 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: 'Montserrat';
-    border-bottom: 1px solid var(--dark);
-    width: fit-content;
-}
+    .text-2 {
+        grid-row: 1/2;
+    }
+    .img-2 {
+        grid-row: 2/3;
+    }
 
-.mvv-box p {
-    font-size: 1.1rem;
-    margin-top: 15px;
-    padding: 20px;
-    text-align: left;
-}
+    .who-we-are p,
+    .biography-text p,
+    .who-we-are-text ul li,
+    .biography-contributions ul li,
+    .who-we-are span,
+    .who-we-are em {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 19px;
+    }
 
-.mvv-box .mvv-img-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (max-width:576px) {
-    .aboutus {
-        display: grid;
+    .who-we-are-content,
+    .biography-content {
         grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 20px 0;
+
     }
 
-    /* HISTÓRIA */
-    .section-history {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    .who-we-are-text {
+        width: 100%;
     }
 
-    .section-history h2 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+    .who-we-are-text p,
+    .biography-text p,
+    .who-we-are-text ul {
+        margin-bottom: 15px;
     }
 
-    .history-content {
-        grid-template-columns: 1fr;
+    .who-we-are-text ul li,
+    .biography-contributions ul li {
+        margin-left: 20px;
+        padding: 5px;
     }
 
-    .history-text {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        text-align: justify;
-    }
-
-    .history-text ul li {
-        font-size: 1rem;
-    }
-
-    .history-text p {
-        font-size: 1rem;
-    }
-
-    .history-text #more-btn-history-div {
-        justify-content: center;
-        margin-bottom: 10%;
-    }
-
-    .history-img {
+    .who-we-are-img img,
+    .biography-img img {
         width: 90%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        border-radius: 5px;
+        margin: auto;
+        display: block;
     }
-
-    /* MISSÃO VISÃO VALORES */
-
-    .section-mvv {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    .mvv-content {
-        grid-template-columns: 1fr;
-    }
-
-    .mvv-box {
-        margin: 40px 0;
-        width: 16rem;
-        height: 15rem;
-    }
-    .mvv-box:hover {
-        cursor: pointer;
-        background: var(--blue);
-    }
-
-    .mvv-box .mvv-box-title {
-        padding: 0 5px;
-    }
-
-    .mvv-box h3 {
-        font-size: 1.5rem;
-    }
-
-    .mvv-box p {
-        font-size: 1rem;
-        margin-top: 20px;
-        padding: 10px;
-    }
-
-    .mvv-img-div img{
-        width: 56px;
-        height: 56px;
-    }
-
 }
