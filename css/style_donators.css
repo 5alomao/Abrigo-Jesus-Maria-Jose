@@ -9,42 +9,28 @@
     grid-row-end: 3;
 }
 
-.table-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.donators-content {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
-.table {
-    width: 100%;
-}
-
-.table-head {
-    background: var(--darkblue);
-    color: var(--dark);
-}
-
-.table-head tr {
-    font-size: 1.5rem;
-}
-
-.table-head tr th {
+.donators-box {
     text-align: center;
-    width: 50%;
-    padding: 10px;
+    background: linear-gradient(to top, var(--lightgreen), var(--green-logo));
 }
 
-.table-body tr {
-    background: #eee;
+.donators-box a {
+    font-size: 24px;
+    font-family: 'Poppins';
+    text-decoration: underline;
 }
 
-.table-body td {
-    font-size: 1.2rem;
-    padding: 10px 0 10px 5px;
-    border-bottom: 1px solid #ccc;
+@media (max-width: 576px) {
+    .donators-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

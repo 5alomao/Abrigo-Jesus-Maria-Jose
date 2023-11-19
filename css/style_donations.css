@@ -49,48 +49,47 @@
     justify-self: left;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 
-div.carousel {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.urgency-box,
+.product-box {
+    margin: 20px;
+    border-radius: 5px;
+    height: 480px;
+    width: 300px;
+}
+
+.urgency-box {
     display: grid;
+}
+
+.urgency-box a {
+    height: 40px;
+    display: flex;
+    justify-self: center;
     align-items: center;
-    grid-template-columns: auto 1fr auto;
+    padding: 15px 20px;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    background: var(--green-logo);
+    font-weight: bold;
 }
 
-.carousel button {
-    width: 80px;
-    height: 80px;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: transparent;
-    background-color: transparent;
-
-}
-
-.carousel button:nth-child(1) {
-    background-image: url("../images/icone_prev.png");
-}
-
-.carousel button:nth-child(3) {
-    background-image: url("../images/icone_next.png");
+.urgency-box p {
+    font-size: 19px;
+    margin: 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 .product-box {
     background: linear-gradient(var(--blue-logo), var(--lightblue));
-    margin: 20px;
-    border-radius: 5px;
 }
 
+.urgency-box h3,
 .product-box h3 {
-    font-size: 28px;
+    font-size: 24px;
     padding: 10px 0;
     text-align: center;
     font-family: 'Montserrat';
@@ -122,8 +121,6 @@ div.carousel {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
     margin: 50px 0;
 }
 
@@ -149,8 +146,6 @@ div.carousel {
 .section-payment {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
 }
 
 .payment-content {
@@ -239,19 +234,6 @@ div.carousel {
     .section-what-to-donate h2 {
         justify-self: left;
         grid-column-end: 2;
-    }
-
-    div.carousel {
-        width: 100%;
-        grid-column-end: 2;
-        grid-template-columns: auto 1fr auto;
-        padding: 0 30px;
-    }
-
-    .carousel button {
-        margin: 0;
-        width: 40px;
-        height: 40px;
     }
 
     .location {

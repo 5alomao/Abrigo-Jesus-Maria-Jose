@@ -62,7 +62,7 @@
 }
 
 @media (max-width: 992px) {
-    
+
     .topic-nav {
         display: none;
     }
@@ -71,7 +71,7 @@
 @media (max-width:576px) {
     .footer-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-items: center;
         padding: 15px 30px;
     }
