@@ -14,14 +14,25 @@ function loadGoogleSheetDataDonators() {
             data.forEach(function (row) {
                 const company = row[0];
                 const companyLink = row[1];
+                const companyLogo = row[2];
 
                 const donatorsBox = document.createElement('div');
                 donatorsBox.className = 'donators-box';
-                donatorsBox.innerHTML = `
-                    <div class="donators-box">
-                    <a href="${companyLink}" target="_blank">${company}</a>
-                    </div>
-                `;
+
+                if (companyLogo) {
+                    donatorsBox.innerHTML = `
+                        <a href="${companyLink}" target="_blank">
+                            <img class="company-logo" src="${companyLogo}" alt="Logo ${company}">
+                        </a>
+                    `;
+                } else {
+                    donatorsBox.innerHTML = `
+                        <a href="${companyLink}" target="_blank">
+                            ${company}
+                        </a>
+                    `;
+                }
+
                 donatorsContent.appendChild(donatorsBox);
             });
         }
@@ -30,6 +41,7 @@ function loadGoogleSheetDataDonators() {
         console.error('Erro ao carregar dados da planilha do Google:', error);
     });
 }
+
 
 function initGoogleSheetsApiDonators() {
     gapi.client.init({

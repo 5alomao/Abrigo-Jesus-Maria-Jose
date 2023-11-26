@@ -14,3 +14,28 @@ navItems.forEach(item => {
         navMenu.classList.remove('ativo');
     });
 });
+
+$(document).ready(function () {
+    $('.product-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+$('#customPrev').on('click', function () {
+    $('.product-carousel').slick('slickPrev');
+});
+
+$('#customNext').on('click', function () {
+    $('.product-carousel').slick('slickNext');
+});

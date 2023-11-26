@@ -51,43 +51,40 @@
     grid-column-end: 4;
 }
 
-.urgency-box,
+.product-carousel-content {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.product-carousel-content span {
+    align-self: center;
+}
+
+.product-carousel {
+    max-width: 1000px;
+    width: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .product-box {
+    background: linear-gradient(var(--blue-logo), var(--lightblue));
     margin: 20px;
     border-radius: 5px;
     height: 480px;
     width: 300px;
 }
 
-.urgency-box {
-    display: grid;
-}
-
-.urgency-box a {
-    height: 40px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    padding: 15px 20px;
-    font-size: 19px;
-    font-family: 'Montserrat';
-    border-radius: 5px;
-    background: var(--green-logo);
-    font-weight: bold;
-}
-
-.urgency-box p {
-    font-size: 19px;
-    margin: 0 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.product-box {
-    background: linear-gradient(var(--blue-logo), var(--lightblue));
-}
-
-.urgency-box h3,
 .product-box h3 {
     font-size: 24px;
     padding: 10px 0;
@@ -234,6 +231,11 @@
     .section-what-to-donate h2 {
         justify-self: left;
         grid-column-end: 2;
+    }
+
+    .product-carousel {
+        width: 100%;
+        max-width: 300px;
     }
 
     .location {

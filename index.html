@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style_contacts.css">
     <link rel="stylesheet" type="text/css" href="./css/style_donators.css">
     <link rel="stylesheet" type="text/css" href="./css/style_footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,13 +23,15 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navigation">
             <a href="#home" class="logo">A J M J <span><i class="fa-solid fa-heart"></i></span></a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home">Página Inicial</a></li>
-                <li class="nav-item"><a href="aboutus.html">Quem Somos</a></li>
                 <li class="nav-item"><a href="#donations">Doações</a></li>
+                <li class="nav-item"><a href="aboutus.html">Quem Somos</a></li>
+                <li class="nav-item"><a href="urgency.html">Urgências</a></li>
                 <li class="nav-item"><a href="#contacts">Contatos</a></li>
                 <li class="nav-item"><a href="#donators">Doadores</a></li>
             </ul>
@@ -40,7 +44,6 @@
     </header>
 
     <main>
-        <!-- Página Inicial -->
         <section id="home" class="home">
             <div class="home-text">
                 <h1><span class="h1-color1">Abrigo</span> <span class="h1-color2">Jesus</span><br><span
@@ -103,7 +106,6 @@
             </div>
         </section>
 
-        <!-- Missão Visão e Valores -->
         <section class="mvv">
             <h2 class="section-topic-h2">Missão, Visão e Valores</h2>
             <div class="mvv-content">
@@ -140,7 +142,6 @@
             </div>
         </section>
 
-        <!-- Doações -->
         <section id="donations" class="donations">
             <header class="section-title">
                 <h1>Doações</h1>
@@ -153,7 +154,7 @@
             </header>
 
             <div class="donation-content">
-                <!-- Intro Doações -->
+
                 <div class="donation-text">
                     <p>
                         <i class="fa-solid fa-quote-left"></i>
@@ -162,116 +163,117 @@
                         resgatadas de situação de vulnerabilidade social.
                     </p>
                 </div>
+
                 <div class="donation-img">
                     <img src="images/icone_doacoes.png" alt="Imagem Mão de Caridade.">
                 </div>
 
-                <!-- O que Doar -->
                 <section class="section-what-to-donate">
                     <h2 class="section-topic-h2">Doe Produtos</h2>
 
+                    <div class="product-carousel-content">
+                        <span class="arrow-prev" id="customPrev"><img src="images/icone_prev.png"
+                                alt="Ícone seta para o anterior."></span>
 
-                    <div class="product-box">
-                        <h3>Alimentícios</h3>
-                        <ul>
-                            <li>Açúcar</li>
-                            <li>Arroz</li>
-                            <li>Cereais</li>
-                            <li>Enlatados</li>
-                            <li>Farinha de Trigo</li>
-                            <li>Feijão</li>
-                            <li>Leite em Pó</li>
-                            <li>Macarrão</li>
-                            <li>Óleo de Cozinha</li>
-                            <li>Sopas Prontas</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_alimentos.png" alt="Ícone de uma Caixa de Alimentos.">
+                        <div class="product-carousel" id="productCarousel">
+                            <div class="product-box">
+                                <h3>Alimentícios</h3>
+                                <ul>
+                                    <li>Açúcar</li>
+                                    <li>Arroz</li>
+                                    <li>Cereais</li>
+                                    <li>Enlatados</li>
+                                    <li>Farinha de Trigo</li>
+                                    <li>Feijão</li>
+                                    <li>Leite em Pó</li>
+                                    <li>Macarrão</li>
+                                    <li>Óleo de Cozinha</li>
+                                    <li>Sopas Prontas</li>
+                                </ul>
+                                <div>
+                                    <img src="images/icone_alimentos.png" alt="Ícone de uma Caixa de Alimentos.">
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <h3>Higiene</h3>
+                                <ul>
+                                    <li>Absorventes</li>
+                                    <li>Condicionador</li>
+                                    <li>Cortador de Unhas</li>
+                                    <li>Creme Dental</li>
+                                    <li>Escova de Dente</li>
+                                    <li>Hidratante Corporal</li>
+                                    <li>Papel Higiênico</li>
+                                    <li>Sabonete</li>
+                                    <li>Shampoo</li>
+                                    <li>Toalhas de Banho</li>
+                                </ul>
+                                <div>
+                                    <img src="images/icone_higiene.png" alt="Ícone de Lavando as Mãos.">
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <h3>Limpeza</h3>
+                                <ul>
+                                    <li>Alvejante</li>
+                                    <li>Amaciante</li>
+                                    <li>Desinfetante</li>
+                                    <li>Detergente</li>
+                                    <li>Esponjas</li>
+                                    <li>Luvas Descartáveis</li>
+                                    <li>Panos de Limpeza</li>
+                                    <li>Sabão em Pó</li>
+                                    <li>Sacos de Lixo</li>
+                                    <li>Vassouras</li>
+                                </ul>
+                                <div>
+                                    <img src="images/icone_limpeza.png" alt="Ícone de uma Vassoura.">
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <h3>Roupas</h3>
+                                <ul>
+                                    <li>Agasalhos</li>
+                                    <li>Calças e Bermudas</li>
+                                    <li>Camisetas e Blusas</li>
+                                    <li>Macacões</li>
+                                    <li>Pijamas</li>
+                                    <li>Roupas Íntimas</li>
+                                    <li>Roupinhas de Bebê</li>
+                                    <li>Sapatos Infantis</li>
+                                    <li>Tênis</li>
+                                    <li>Vestidos</li>
+                                </ul>
+                                <div>
+                                    <img src="images/icone_roupas.png" alt="Ícone de uma Camiseta.">
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <h3>Brinquedos</h3>
+                                <ul>
+                                    <li>Bolas</li>
+                                    <li>Blocos de Montar</li>
+                                    <li>Bonecas</li>
+                                    <li>Carrinhos</li>
+                                    <li>Jogos de Memória</li>
+                                    <li>Jogos de Tabuleiro</li>
+                                    <li>Livros Infantis</li>
+                                    <li>Massa de Modelar</li>
+                                    <li>Pelúcias</li>
+                                    <li>Quebra-Cabeças</li>
+                                </ul>
+                                <div>
+                                    <img src="images/icone_brinquedos.png" alt="Ícone de Brinquedos.">
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="product-box">
-                        <h3>Higiene</h3>
-                        <ul>
-                            <li>Absorventes</li>
-                            <li>Condicionador</li>
-                            <li>Cortador de Unhas</li>
-                            <li>Creme Dental</li>
-                            <li>Escova de Dente</li>
-                            <li>Hidratante Corporal</li>
-                            <li>Papel Higiênico</li>
-                            <li>Sabonete</li>
-                            <li>Shampoo</li>
-                            <li>Toalhas de Banho</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_higiene.png" alt="Ícone de Lavando as Mãos.">
-                        </div>
-                    </div>
-
-                    <div class="product-box">
-                        <h3>Limpeza</h3>
-                        <ul>
-                            <li>Alvejante</li>
-                            <li>Amaciante</li>
-                            <li>Desinfetante</li>
-                            <li>Detergente</li>
-                            <li>Esponjas</li>
-                            <li>Luvas Descartáveis</li>
-                            <li>Panos de Limpeza</li>
-                            <li>Sabão em Pó</li>
-                            <li>Sacos de Lixo</li>
-                            <li>Vassouras</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_limpeza.png" alt="Ícone de uma Vassoura.">
-                        </div>
-                    </div>
-
-                    <div class="product-box">
-                        <h3>Roupas</h3>
-                        <ul>
-                            <li>Agasalhos</li>
-                            <li>Calças e Bermudas</li>
-                            <li>Camisetas e Blusas</li>
-                            <li>Macacões</li>
-                            <li>Pijamas</li>
-                            <li>Roupas Íntimas</li>
-                            <li>Roupinhas de Bebê</li>
-                            <li>Sapatos Infantis</li>
-                            <li>Tênis</li>
-                            <li>Vestidos</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_roupas.png" alt="Ícone de uma Camiseta.">
-                        </div>
-                    </div>
-
-                    <div class="product-box">
-                        <h3>Brinquedos</h3>
-                        <ul>
-                            <li>Bolas</li>
-                            <li>Blocos de Montar</li>
-                            <li>Bonecas</li>
-                            <li>Carrinhos</li>
-                            <li>Jogos de Memória</li>
-                            <li>Jogos de Tabuleiro</li>
-                            <li>Livros Infantis</li>
-                            <li>Massa de Modelar</li>
-                            <li>Pelúcias</li>
-                            <li>Quebra-Cabeças</li>
-                        </ul>
-                        <div>
-                            <img src="images/icone_brinquedos.png" alt="Ícone de Brinquedos.">
-                        </div>
-                    </div>
-
-                    <div class="urgency-box">
-                        <h3>Urgências</h3>
-                        <p>
-                            Clicando no botão abaixo você encontrará os produtos os quais estamos precisando no momento!
-                        </p>
-                        <a href="urgency.html">Visualizar Urgências</a>
+                        <span class="arrow-next" id="customNext"><img src="images/icone_next.png"
+                                alt="Ícone seta para o próximo."></span>
                     </div>
 
                     <address class="location">
@@ -287,7 +289,6 @@
                     </address>
                 </section>
 
-                <!-- Por onde Doar -->
                 <section class="section-payment">
                     <h2 class="section-topic-h2">Doe Dinheiro </h2>
                     <div class="payment-content">
@@ -317,35 +318,10 @@
                     </div>
                 </section>
 
-                <!-- Outras Formas de Ajudar -->
-                <!-- <section class="section-help">
-                    <h2 class="section-topic-h2">Outras Formas de Ajudar</h2>
-                    <div class="help-content">
-                        <div class="help-text">
-                            
-                            <p><span class="span-topic">Seja um Voluntário:</span> Se você tem tempo e habilidades para
-                                compartilhar,
-                                considere se tornar um voluntário e fazer a diferença na vida de nossos jovens.</p>
-                        </div>
-                        <div class="help-text">
-                            
-                            <p><span class="span-topic">Compartilhe Nossa História:</span> Ajude a aumentar nossa
-                                visibilidade compartilhando
-                                nossa história e missão com sua rede de contatos.</p>
-                        </div>
-                        <div class="help-text">
-                            
-                            <p><span class="span-topic">Parcerias Empresariais:</span>Se sua empresa está interessada em
-                                apoiar uma causa social,
-                                entre em contato para discutir possíveis parcerias.</p>
-                        </div>
-                    </div>
-
-                </section> -->
             </div>
         </section>
 
-        <!-- Contatos -->
+
         <section id="contacts" class="contacts">
             <header class="section-title">
                 <h1>Contatos</h1>
@@ -410,7 +386,6 @@
             </div>
         </section>
 
-        <!-- DOADORES - COLABORADORES - APOIADORES -->
         <section id="donators" class="donators">
             <header class="section-title">
                 <h1>Doadores</h1>
@@ -422,10 +397,9 @@
                 </div>
             </header>
             <h2 class="section-topic-h2">Empresas Parceiras </h2>
-            <!-- <h4>Em desenvolvimento . . .</h4> -->
             <div id="donators-content" class="donators-content">
-
             </div>
+
         </section>
     </main>
 
@@ -439,12 +413,13 @@
             <div class="footer-topic-box topic-nav">
                 <h3>Navegação</h3>
                 <nav>
-                    <ul>
-                        <li><a href="#home">Página Inicial</a></li>
-                        <li><a href="#aboutus">Quem Somos</a></li>
-                        <li><a href="#donations">Doações</a></li>
-                        <li><a href="#contacts">Contatos</a></li>
-                        <li><a href="#donators">Doadores</a></li>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home">Página Inicial</a></li>
+                        <li class="nav-item"><a href="#donations">Doações</a></li>
+                        <li class="nav-item"><a href="aboutus.html">Quem Somos</a></li>
+                        <li class="nav-item"><a href="urgency.html">Urgências</a></li>
+                        <li class="nav-item"><a href="#contacts">Contatos</a></li>
+                        <li class="nav-item"><a href="#donators">Doadores</a></li>
                     </ul>
                 </nav>
             </div>
@@ -510,7 +485,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/script_donators.js"></script>

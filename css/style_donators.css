@@ -14,18 +14,27 @@
     grid-column-end: 3;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 25px;
 }
 
 .donators-box {
-    text-align: center;
-    background: linear-gradient(to top, var(--lightgreen), var(--green-logo));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.donators-box a {
+.donators-box a{
     font-size: 24px;
     font-family: 'Poppins';
-    text-decoration: underline;
+}
+
+.donators-box img {
+    max-width: 150px;
+    /* Defina o tamanho máximo desejado */
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    display: block;
 }
 
 @media (max-width: 576px) {
