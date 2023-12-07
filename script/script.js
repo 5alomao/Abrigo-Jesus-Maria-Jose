@@ -39,3 +39,32 @@ $('#customPrev').on('click', function () {
 $('#customNext').on('click', function () {
     $('.product-carousel').slick('slickNext');
 });
+
+function reset() {
+    var sections = document.querySelectorAll('.contentSection');
+    var options = document.querySelectorAll('.aboutus-navigation-option');
+
+    sections.forEach(function (section) {
+        section.style.display = 'none';
+    });
+
+    options.forEach(function (option) {
+        option.style.background = 'var(--white)';
+    });
+}
+
+function viewSection(sectionId, optionId) {
+    reset();
+    var section = document.getElementById(sectionId);
+    var option = document.getElementById(optionId);
+
+    section.style.display = 'block';
+    option.style.background = 'var(--lightblue)';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    viewSection('whoSection', 'whoOption');
+});
+
+
+
