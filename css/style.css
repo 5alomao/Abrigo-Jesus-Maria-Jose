@@ -18,7 +18,7 @@
     --blue: #2898ee;
     --lightblue: #cbedf4;
     --red: #f7434c;
-    --lightgreen: #93de3862;
+    --lightgreen: rgb(204, 241, 159);
     --green-logo: #93de38;
     --blue-logo: #5d8ef3;
 }
