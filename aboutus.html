@@ -35,8 +35,8 @@
     </header>
 
     <main>
-
         <section class="aboutus">
+
             <header class="section-title">
                 <h1>Sobre Nós</h1>
                 <h4>Entenda o que nos impulsiona</h4>
@@ -47,8 +47,37 @@
                 </div>
             </header>
 
-            <section class="who-we-are">
-                <h2 class="section-topic-h2">Nossa História</h2>
+            <section class="aboutus-navigation">
+                <div id="whoOption" class="aboutus-navigation-option" onclick="viewSection('whoSection', 'whoOption')">
+                    <div class="aboutus-option-text">
+                        <h3>Nossa História</h3>
+                    </div>
+                    <div class="aboutus-option-img">
+                        <img src="images/icone_historia.png" alt="Imagem Ícone de um Livro.">
+                    </div>
+                </div>
+
+                <div id="bioOption" class="aboutus-navigation-option" onclick="viewSection('bioSection', 'bioOption')">
+                    <div class="aboutus-option-text">
+                        <h3>Fundador</h3>
+                    </div>
+                    <div class="aboutus-option-img">
+                        <img src="images/icone_fundador.png" alt="Imagem Ícone de um Senhor.">
+                    </div>
+                </div>
+
+                <div id="nunOption" class="aboutus-navigation-option" onclick="viewSection('nunSection', 'nunOption')">
+                    <div class="aboutus-option-text">
+                        <h3>Freiras</h3>
+                    </div>
+                    <div class="aboutus-option-img">
+                        <img src="images/icone_freira.png" alt="Imagem Ícone de uma Freira.">
+                    </div>
+                </div>
+            </section>
+
+            <section class="who-we-are contentSection" id="whoSection">
+                <h2 id="who-we-are" class="section-topic-h2">Nossa História</h2>
                 <div class="who-we-are-content">
                     <div class="who-we-are-text">
                         <p>O <span class="h1-color1">Abrigo</span> <span class="h1-color2">Jesus</span> <span
@@ -89,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="who-we-are-content">
+                <div class="who-we-are-content noneOption">
                     <div class="who-we-are-img img-2">
                         <img title="Imagem da fachada do Abrigo Jesus Maria José em 1989."
                             src="images/imagem_fachada_abrigo_2.jpeg"
@@ -122,7 +151,7 @@
                 </div>
             </section>
 
-            <section class="biography">
+            <section class="biography contentSection" id="bioSection">
                 <h2 class="section-topic-h2">Lindolfo de Souza Dias</h2>
                 <div class="biography-content">
                     <div class="biography-text">
@@ -176,6 +205,16 @@
                     </ul>
                 </div>
             </section>
+
+            <section class="nun contentSection" id="nunSection">
+                <h2 class="section-topic-h2">Freiras</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat minus maiores ullam sit rem ipsum
+                    facere ipsam? Voluptatem reiciendis libero a soluta voluptatum minima earum, optio voluptas
+                    molestiae? Quis, praesentium!
+                </p>
+            </section>
+
         </section>
 
     </main>
