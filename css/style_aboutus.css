@@ -15,6 +15,7 @@
 
 .aboutus-navigation-option:hover {
     background: var(--lightblue);
+    cursor: pointer;
 }
 
 .aboutus-option-text {
@@ -33,7 +34,6 @@
     font-family: 'Montserrat';
 }
 
-
 .who-we-are,
 .biography,
 .nun {
@@ -50,7 +50,10 @@
 
 .who-we-are p,
 .biography-text p,
-.nun p,
+.nun-text p,
+.nun-text span,
+.bio-madre-text p,
+.bio-madre-text span,
 .who-we-are-text ul li,
 .biography-contributions ul li,
 .who-we-are span,
@@ -62,10 +65,16 @@
 .who-we-are-content,
 .biography-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: 20px 0;
+}
 
+.who-we-are-content {
+    grid-template-columns: 1fr 1fr;
+}
+
+.biography-content {
+    grid-template-columns: 1fr;
 }
 
 .who-we-are-text {
@@ -74,7 +83,9 @@
 
 .who-we-are-text p,
 .biography-text p,
-.who-we-are-text ul {
+.nun-text p,
+.who-we-are-text ul,
+.bio-madre-text p {
     margin-bottom: 15px;
 }
 
@@ -84,23 +95,51 @@
     padding: 5px;
 }
 
+.biography-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;
+}
+
 .who-we-are-img img,
 .biography-img img {
     width: 90%;
+    height: 100%;
     border-radius: 5px;
     margin: auto;
     display: block;
 }
 
-.noneOption {
-    display: none;
+.bio-madre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bio-madre-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.bio-madre-img img {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.madre-img img {
+    display: block;
+    width: 60%;
+    margin: auto;
 }
 
 @media (max-width: 576px) {
 
-    .who-we-are p::first-letter,
-    .biography p::first-letter {
-        margin-left: 40px;
+    .aboutus-navigation {
+        grid-template-columns: 1fr;
     }
 
     .text-2 {
@@ -111,45 +150,20 @@
         grid-row: 2/3;
     }
 
-    .who-we-are p,
-    .biography-text p,
-    .who-we-are-text ul li,
-    .biography-contributions ul li,
-    .who-we-are span,
-    .who-we-are em {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 19px;
-    }
-
-    .who-we-are-content,
-    .biography-content {
+    .biography-img {
         grid-template-columns: 1fr;
-        justify-items: center;
-        margin: 20px 0;
-
     }
 
-    .who-we-are-text {
-        width: 100%;
-    }
-
-    .who-we-are-text p,
-    .biography-text p,
-    .who-we-are-text ul {
-        margin-bottom: 15px;
-    }
-
-    .who-we-are-text ul li,
-    .biography-contributions ul li {
-        margin-left: 20px;
-        padding: 5px;
-    }
-
-    .who-we-are-img img,
     .biography-img img {
-        width: 90%;
-        border-radius: 5px;
-        margin: auto;
-        display: block;
+        padding: 20px 0;
     }
+
+    .who-we-are-content {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-madre {
+        grid-template-columns: 1fr;
+    }
+
 }
